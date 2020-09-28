@@ -1,0 +1,71 @@
+@font-face{
+    font-family: "LeagueSpartan";
+    src: url("../assets/fonts/LeagueSpartan-Regular/LeagueSpartan-Regular.otf")format("opentype"),
+    url("../assets/fonts/LeagueSpartan-Regular/LeagueSpartan-Regular.ttf")format("truetype"),
+    url("../assets/fonts/LeagueSpartan-Regular/LeagueSpartan-Regular.woff")format("woff"),
+    url("../assets/fonts/LeagueSpartan-Regular/LeagueSpartan-Regular.woff2")format("woff2");
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: "LeagueSpartan-Bold";
+    src: url("../assets/fonts/LeagueSpartan-Bold/LeagueSpartan-Bold.otf")format("opentype"),
+    url("../assets/fonts/LeagueSpartan-Bold/LeagueSpartan-Bold.ttf")format("truetype"),
+    url("../assets/fonts/LeagueSpartan-Bold/LeagueSpartan-Bold.woff")format("woff"),
+    url("../assets/fonts/LeagueSpartan-Bold/LeagueSpartan-Bold.woff2")format("woff2");
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: "OstrichSans";
+    src: url("../assets/fonts/Ostrich-Sans-Regular/ostrich-sans-regular.eot")format("opentype"),
+    url("../assets/fonts/Ostrich-Sans-Regular/ostrich-sans-regular.ttf")format("truetype"),
+    url("../assets/fonts/Ostrich-Sans-Regular/ostrich-sans-regular.woff")format("woff");
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: "OstrichSans-Bold";
+    src: url("../assets/fonts/Ostrich-Sans-Black/ostrich-sans-black.eot")format("opentype"),
+    url("../assets/fonts/Ostrich-Sans-Black/ostrich-sans-black.ttf")format("truetype"),
+    url("../assets/fonts/Ostrich-Sans-Black/ostrich-sans-black.woff")format("woff");
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: "JosefinSlab";
+    src: url("../assets/fonts/JosefinSlab-Regular.ttf")format("truetype");
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: "ZillaSlab";
+    src: url("../assets/fonts/ZillaSlab-Regular.ttf")format("truetype");
+    font-weight: normal;
+}
+
+$fontStackSpartan: 'LeagueSpartan', Arial, sans-serif;
+$fontStackSpartan-Bold: 'LeagueSpartan-Bold', Arial, sans-serif;
+$fontStackOstrich: 'OstrichSans', Arial, sans-serif;
+$fontStackOstrich-Bold: 'OstrichSans-Bold', Arial, sans-serif;
+$fontStackJosefin: 'JosefinSlab', serif;
+$fontStackZilla: 'ZillaSlab', serif;
+
+.heading {
+    font-family: $fontStackOstrich-Bold;
+    font-size: 7rem;
+    font-weight: bold;
+    color: $navy;
+}
+
+.subHeading {
+    font-family: $fontStackOstrich;
+    font-size: 4rem;
+    color: $navy;
+}
+
+.plainText {
+    font-family: $fontStackZilla;
+    font-size: 2rem;
+    color: $navy;
+}

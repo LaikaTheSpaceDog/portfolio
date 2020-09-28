@@ -1,0 +1,11 @@
+.navLink {
+    font-family: $fontStackOstrich;
+    font-size: 3rem;
+    color: $navy;
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
