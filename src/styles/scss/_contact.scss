@@ -1,0 +1,16 @@
+.contactNav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact {
+    background-color: $orange;
+    height: 100vh;
+    text-align: center;
+
+    .heading {
+        padding-top: 20%;
+        padding-bottom: 5%;
+    }
+}

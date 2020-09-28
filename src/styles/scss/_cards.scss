@@ -1,0 +1,32 @@
+.card {
+    border: 1px $navy solid;
+    min-width: 200px;
+    width: 25vw;
+    padding: 1rem;
+    text-align: center;
+    height: 60vh;
+}
+
+.cardImg {
+    width: 90%;
+    padding-bottom: 1rem;
+}
+
+.cardGroup {
+    display: flex;
+    justify-content: space-evenly;
+
+    .card {
+        margin: 2rem;
+    }
+}
+
+.projects {
+    background-color: $ghost;
+    height: 100vh;
+    text-align: center;
+
+    .scroll {
+        margin: 2rem;  
+    }
+}

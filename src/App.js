@@ -1,8 +1,17 @@
 import React from 'react';
 import './styles/css/styles.min.css';
+import About from "./components/About";
+import Contacts from "./components/Contacts";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 const App = () => (
-  <h1>Portfolio</h1>
+  <>
+    <About />
+    <Projects />
+    <Contacts />
+    <Footer />
+  </>
 );
 
 export default App;

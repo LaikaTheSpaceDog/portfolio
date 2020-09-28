@@ -44,28 +44,65 @@
     font-weight: normal;
 }
 
+@font-face{
+    font-family: "Noticia";
+    src: url("../assets/fonts/NoticiaText-Regular.ttf")format("truetype");
+    font-weight: normal;
+}
+
 $fontStackSpartan: 'LeagueSpartan', Arial, sans-serif;
 $fontStackSpartan-Bold: 'LeagueSpartan-Bold', Arial, sans-serif;
 $fontStackOstrich: 'OstrichSans', Arial, sans-serif;
 $fontStackOstrich-Bold: 'OstrichSans-Bold', Arial, sans-serif;
 $fontStackJosefin: 'JosefinSlab', serif;
 $fontStackZilla: 'ZillaSlab', serif;
+$fontStackNoticia: 'Noticia', serif;
 
 .heading {
     font-family: $fontStackOstrich-Bold;
     font-size: 7rem;
     font-weight: bold;
-    color: $navy;
+    color: $ghost;
+    text-align: center;
 }
 
 .subHeading {
     font-family: $fontStackOstrich;
     font-size: 4rem;
-    color: $navy;
+    color: $ghost;
 }
 
 .plainText {
-    font-family: $fontStackZilla;
+    font-family: $fontStackNoticia;
     font-size: 2rem;
-    color: $navy;
+    color: $ghost;
+}
+
+.cardText {
+    font-family: $fontStackNoticia;
+    font-size: 1.25rem;
+    color: $navy
+}
+
+.cardHeading {
+    font-family: $fontStackOstrich;
+    font-size: 3rem;
+    color: $orange;
+    text-align: center;
+}
+
+.cardGroupHeading {
+    font-family: $fontStackOstrich-Bold;
+    font-size: 3rem;
+    color: $orange;
+    text-align: center;
+    background-color: $ghost;
+}
+
+.footerText {
+    font-family: $fontStackNoticia;
+    font-size: 2rem;
+    color: $orange;
+    text-align: center;
+    padding: 1rem
 }
