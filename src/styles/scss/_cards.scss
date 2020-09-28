@@ -4,7 +4,8 @@
     width: 25vw;
     padding: 1rem;
     text-align: center;
-    height: 60vh;
+    min-height: 60vh;
+    position: relative;
 }
 
 .cardImg {
@@ -29,4 +30,12 @@
     .scroll {
         margin: 2rem;  
     }
+}
+
+.cardLinks {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
 }

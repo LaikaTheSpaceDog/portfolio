@@ -106,3 +106,19 @@ $fontStackNoticia: 'Noticia', serif;
     text-align: center;
     padding: 1rem
 }
+
+.cardLinkText {
+    font-family: $fontStackOstrich;
+    font-size: 2rem;
+
+    a {
+        text-decoration: none;
+        color: $orange;
+    }
+
+}
+
+.description {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}

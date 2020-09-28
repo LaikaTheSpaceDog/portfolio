@@ -5,6 +5,10 @@
     height: 100vh;
     overflow: none;
     text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     .heading{
         margin-top: 15vh;
@@ -12,7 +16,7 @@
     
     .subHeading{
         text-align: center;
-        margin-bottom: 15vh;
+        // margin-bottom: 15vh;
     }
 
     .scrollWhite {
