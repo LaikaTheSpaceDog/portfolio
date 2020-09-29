@@ -95,16 +95,49 @@ body {
   font-family: "OstrichSans", Arial, sans-serif;
   font-size: 3rem;
   color: #F8F8FF;
-  padding: 0 5rem; }
+  padding: 0 1rem;
+  position: relative;
+  transition: color 1s ease-out;
+  -o-transition: color 1s ease-out, background 1s ease-in;
+  -ms-transition: color 1s ease-out, background 1s ease-in;
+  -moz-transition: color 1s ease-out, background 1s ease-in;
+  -webkit-transition: color 1s ease-out, background 1s ease-in; }
 
 .navList {
   list-style: none;
   display: flex;
   justify-content: space-evenly; }
+  .navList .navLink {
+    margin: 0 4rem; }
 
 .navLinkBox {
   width: 300px;
   text-align: center; }
+
+.navLink:after {
+  border-radius: 1em;
+  border-top: 0.1em solid #D77356;
+  content: "";
+  position: absolute;
+  top: 100%;
+  bottom: .14em;
+  left: 0;
+  transition: right 0.4s cubic-bezier(0, 0.5, 0, 1), border-color 0.4s ease-out; }
+
+.navLink:hover:after {
+  animation: anchor-underline 2s cubic-bezier(0, 0.5, 0, 1) infinite;
+  border-color: #F8F8FF; }
+
+@keyframes anchor-underline {
+  0%, 10% {
+    left: 0;
+    right: 100%; }
+  40%, 60% {
+    left: 0;
+    right: 0; }
+  90%, 100% {
+    left: 100%;
+    right: 0; } }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126

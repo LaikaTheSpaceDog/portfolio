@@ -6,13 +6,13 @@ const About = () => (
         <article class="jumbo">
             <ul class="navList">
                 <div class="navLinkBox">
-                    <li class="navLink">Home</li>
+                    <li><a class="navLink">Home</a></li>
                 </div>
                 <div class="navLinkBox">
-                    <li class="navLink">Projects</li>
+                    <li><a class="navLink">Projects</a></li>
                 </div>
                 <div class="navLinkBox">
-                    <li class="navLink">Contact</li>
+                    <li><a class="navLink">Contact</a></li>
                 </div>
             </ul>
             <section>
