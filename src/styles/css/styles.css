@@ -282,7 +282,10 @@ table {
     margin-bottom: 2rem; }
 
 .footer {
-  background-color: #F8F8FF; }
+  background-color: #F8F8FF;
+  bottom: 0;
+  position: absolute;
+  width: 100%; }
 
 #root {
   scroll-snap-type: y mandatory;

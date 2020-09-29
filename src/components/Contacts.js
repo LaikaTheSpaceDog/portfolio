@@ -3,6 +3,7 @@ import github from "../styles/assets/icons/github.svg";
 import email from "../styles/assets/icons/envelope-line.svg";
 import linkedin from "../styles/assets/icons/linkedin-square.svg";
 import scrollUp from "../styles/assets/icons/double-arrow-top.svg";
+import Footer from "./Footer";
 
 const Contacts = () => (
     <>
@@ -19,6 +20,7 @@ const Contacts = () => (
                     <img class="contactIcon" src={ linkedin } href="https://www.linkedin.com/in/oscar-wales/" alt="LinkedIn logo"/>
                 </section>
             </section>
+            <Footer />
         </article>
     </>
 );
