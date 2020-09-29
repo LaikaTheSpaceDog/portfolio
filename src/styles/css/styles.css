@@ -232,7 +232,6 @@ table {
 .scrollWhite {
   width: 20px;
   filter: invert(84%) sepia(32%) saturate(420%) hue-rotate(196deg) brightness(107%) contrast(112%);
-  position: absolute;
   padding: 2rem 0; }
 
 .contactIcon {
@@ -257,7 +256,7 @@ table {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 30vh; }
+  padding-top: 15vh; }
   .contactNav .heading {
     margin-bottom: 2rem; }
 
