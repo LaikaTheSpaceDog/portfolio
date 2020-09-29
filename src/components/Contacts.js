@@ -7,17 +7,17 @@ import Footer from "./Footer";
 
 const Contacts = () => (
     <>
-        <article class="contact snap" id="contact">
-        <img class="scrollWhite" src={ scrollUp } alt="Scroll up arrow" />
-            <section class="contactNav">
-                <h1 class="heading">Contact</h1>
-                <section class="contactBar">
-                    <img class="contactIcon" src={ github } href="https://github.com/LaikaTheSpaceDog" alt="GitHub logo"/>
-                    <div class="email">
-                        <img class="contactIcon" src={ email } href="oscarjwales@gmail.com" alt="Email icon" />
-                        <p class="plainText">oscarjwales@gmail.com</p>
+        <article className="contact snap" id="contact">
+        <img className="scrollWhite" src={ scrollUp } alt="Scroll up arrow" />
+            <section className="contactNav">
+                <h1 className="heading">Contact</h1>
+                <section className="contactBar">
+                    <a href="https://github.com/LaikaTheSpaceDog"><img className="contactIcon" src={ github } alt="GitHub logo"/></a>
+                    <div className="email">
+                        <a href="oscarjwales@gmail.com"><img className="contactIcon" src={ email } alt="Email icon" /></a>
+                        <p className="plainText">oscarjwales@gmail.com</p>
                     </div>
-                    <img class="contactIcon" src={ linkedin } href="https://www.linkedin.com/in/oscar-wales/" alt="LinkedIn logo"/>
+                    <a href="https://www.linkedin.com/in/oscar-wales/"><img className="contactIcon" src={ linkedin } alt="LinkedIn logo"/></a>
                 </section>
             </section>
             <Footer />

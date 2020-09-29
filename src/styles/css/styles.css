@@ -3,34 +3,14 @@ body {
   max-width: 100%; }
 
 @font-face {
-  font-family: "LeagueSpartan";
-  src: url("../assets/fonts/LeagueSpartan-Regular/LeagueSpartan-Regular.otf") format("opentype"), url("../assets/fonts/LeagueSpartan-Regular/LeagueSpartan-Regular.ttf") format("truetype"), url("../assets/fonts/LeagueSpartan-Regular/LeagueSpartan-Regular.woff") format("woff"), url("../assets/fonts/LeagueSpartan-Regular/LeagueSpartan-Regular.woff2") format("woff2");
-  font-weight: normal; }
-
-@font-face {
-  font-family: "LeagueSpartan-Bold";
-  src: url("../assets/fonts/LeagueSpartan-Bold/LeagueSpartan-Bold.otf") format("opentype"), url("../assets/fonts/LeagueSpartan-Bold/LeagueSpartan-Bold.ttf") format("truetype"), url("../assets/fonts/LeagueSpartan-Bold/LeagueSpartan-Bold.woff") format("woff"), url("../assets/fonts/LeagueSpartan-Bold/LeagueSpartan-Bold.woff2") format("woff2");
-  font-weight: bold; }
-
-@font-face {
   font-family: "OstrichSans";
-  src: url("../assets/fonts/Ostrich-Sans-Regular/ostrich-sans-regular.eot") format("opentype"), url("../assets/fonts/Ostrich-Sans-Regular/ostrich-sans-regular.ttf") format("truetype"), url("../assets/fonts/Ostrich-Sans-Regular/ostrich-sans-regular.woff") format("woff");
+  src: url("../assets/fonts/Ostrich-Sans-Regular/ostrich-sans-regular.ttf") format("truetype"), url("../assets/fonts/Ostrich-Sans-Regular/ostrich-sans-regular.woff") format("woff");
   font-weight: normal; }
 
 @font-face {
   font-family: "OstrichSans-Bold";
-  src: url("../assets/fonts/Ostrich-Sans-Black/ostrich-sans-black.eot") format("opentype"), url("../assets/fonts/Ostrich-Sans-Black/ostrich-sans-black.ttf") format("truetype"), url("../assets/fonts/Ostrich-Sans-Black/ostrich-sans-black.woff") format("woff");
+  src: url("../assets/fonts/Ostrich-Sans-Black/ostrich-sans-black.ttf") format("truetype"), url("../assets/fonts/Ostrich-Sans-Black/ostrich-sans-black.woff") format("woff");
   font-weight: bold; }
-
-@font-face {
-  font-family: "JosefinSlab";
-  src: url("../assets/fonts/JosefinSlab-Regular.ttf") format("truetype");
-  font-weight: normal; }
-
-@font-face {
-  font-family: "ZillaSlab";
-  src: url("../assets/fonts/ZillaSlab-Regular.ttf") format("truetype");
-  font-weight: normal; }
 
 @font-face {
   font-family: "Noticia";
