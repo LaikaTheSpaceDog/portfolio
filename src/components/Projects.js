@@ -3,6 +3,7 @@ import scrollUp from "../styles/assets/icons/double-arrow-top.svg";
 import scrollDown from "../styles/assets/icons/double-arrow-bottom.svg";
 import pingPong from "../styles/assets/images/pong.png";
 import nerd from "../styles/assets/images/nerd.png";
+import pet from "../styles/assets/images/pet.png";
 
 const Projects = () => (
     <>
@@ -31,12 +32,11 @@ const Projects = () => (
                 </ul>
             </article>
             <article className="card">
-                <img className="cardImg" src="" alt="" />
-                <h3 className="cardHeading">TBC</h3>
-                <p className="cardText"></p>
+                <img className="cardImg" src={ pet } alt="Home page of pet database" />
+                <h3 className="cardHeading">Pet Database</h3>
+                <p className="cardText">I built this pet database during weeks 7 and 8 of the Develop Me Bootcamp using Laravel. This app has a RESTful API and a UI built with blade and basic Bootstrap styling.</p>
                 <ul className="cardLinks">
-                    <li className="cardLinkText">Repo</li>
-                    <li className="cardLinkText">Live</li>
+                    <li className="cardLinkText"><a href="https://github.com/LaikaTheSpaceDog/laravel_project_vet">Repo</a></li>
                 </ul>
             </article>
             </section>
