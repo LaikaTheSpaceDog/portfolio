@@ -6,7 +6,7 @@ import scrollUp from "../styles/assets/icons/double-arrow-top.svg";
 
 const Contacts = () => (
     <>
-        <article class="contact">
+        <article class="contact snap" id="contact">
         <img class="scrollWhite" src={ scrollUp } alt="Scroll up arrow" />
             <section class="contactNav">
                 <h1 class="heading">Contact</h1>

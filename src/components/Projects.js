@@ -6,7 +6,7 @@ import nerd from "../styles/assets/images/nerd.png";
 
 const Projects = () => (
     <>
-        <main class="projects">
+        <main class="projects snap" id="projects">
         <img class="scroll" src={ scrollUp } alt="Scroll up arrow" />
             <heading class="cardsHeading">
                 <h2 class="cardGroupHeading">Projects</h2>

@@ -1,0 +1,9 @@
+#root {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    max-height: 100vh;
+}
+
+.snap {
+    scroll-snap-align: start;
+}

@@ -70,8 +70,7 @@ body {
   font-size: 3rem;
   color: #D77356;
   text-align: center;
-  background-color: #F8F8FF;
-  padding-top: 5rem; }
+  background-color: #F8F8FF; }
 
 .footerText {
   font-family: "Noticia", serif;
@@ -101,7 +100,8 @@ body {
   -o-transition: color 1s ease-out, background 1s ease-in;
   -ms-transition: color 1s ease-out, background 1s ease-in;
   -moz-transition: color 1s ease-out, background 1s ease-in;
-  -webkit-transition: color 1s ease-out, background 1s ease-in; }
+  -webkit-transition: color 1s ease-out, background 1s ease-in;
+  text-decoration: none; }
 
 .navList {
   list-style: none;
@@ -241,7 +241,6 @@ table {
 .scroll {
   width: 20px;
   filter: invert(64%) sepia(70%) saturate(1088%) hue-rotate(318deg) brightness(86%) contrast(96%);
-  position: absolute;
   padding: 2rem 0; }
 
 .down {
@@ -284,3 +283,11 @@ table {
 
 .footer {
   background-color: #F8F8FF; }
+
+#root {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  max-height: 100vh; }
+
+.snap {
+  scroll-snap-align: start; }

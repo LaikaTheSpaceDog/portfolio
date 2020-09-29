@@ -3,16 +3,16 @@ import bottomArrow from "../styles/assets/icons/double-arrow-bottom.svg"
 
 const About = () => (
     <>
-        <article class="jumbo">
+        <article class="jumbo snap" id="about">
             <ul class="navList">
                 <div class="navLinkBox">
-                    <li><a class="navLink">Home</a></li>
+                    <li><a class="navLink" href="#about">About</a></li>
                 </div>
                 <div class="navLinkBox">
-                    <li><a class="navLink">Projects</a></li>
+                    <li><a class="navLink" href="#projects">Projects</a></li>
                 </div>
                 <div class="navLinkBox">
-                    <li><a class="navLink">Contact</a></li>
+                    <li><a class="navLink" href="#contact">Contact</a></li>
                 </div>
             </ul>
             <section>
