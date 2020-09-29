@@ -7,8 +7,10 @@ import nerd from "../styles/assets/images/nerd.png";
 const Projects = () => (
     <>
         <main class="projects">
-            <img class="scroll" src={ scrollUp } alt="Scroll up arrow" />
-            <h2 class="cardGroupHeading">Projects</h2>
+        <img class="scroll" src={ scrollUp } alt="Scroll up arrow" />
+            <heading class="cardsHeading">
+                <h2 class="cardGroupHeading">Projects</h2>
+            </heading>
             <section class="cardGroup">
             <article class="card">
                 <img class="cardImg" src={ pingPong } alt="Landing page of pong-themed ping-pong tournament app" />

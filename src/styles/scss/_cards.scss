@@ -26,10 +26,6 @@
     background-color: $ghost;
     height: 100vh;
     text-align: center;
-
-    .scroll {
-        margin: 2rem;  
-    }
 }
 
 .cardLinks {
@@ -38,4 +34,8 @@
     list-style: none;
     padding-top: 1.5rem;
     padding-bottom: 0.5rem;
+}
+
+.cardsHeading {
+    text-align: center;
 }

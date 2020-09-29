@@ -2,10 +2,16 @@
     font-family: $fontStackOstrich;
     font-size: 3rem;
     color: $ghost;
+    padding: 0 5rem;
 }
 
 .navList {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
+}
+
+.navLinkBox {
+    width: 300px;
+    text-align: center;
 }

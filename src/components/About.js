@@ -5,9 +5,15 @@ const About = () => (
     <>
         <article class="jumbo">
             <ul class="navList">
-                <li class="navLink">Home</li>
-                <li class="navLink">Projects</li>
-                <li class="navLink">Contact</li>
+                <div class="navLinkBox">
+                    <li class="navLink">Home</li>
+                </div>
+                <div class="navLinkBox">
+                    <li class="navLink">Projects</li>
+                </div>
+                <div class="navLinkBox">
+                    <li class="navLink">Contact</li>
+                </div>
             </ul>
             <section>
                 <h1 class="heading">Oscar Wales</h1>

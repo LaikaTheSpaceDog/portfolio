@@ -1,17 +1,25 @@
-.contactNav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
 .contact {
     background-color: $orange;
     height: 100vh;
     text-align: center;
     position: relative;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+}
 
+.contactBar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contactNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30vh;
     .heading {
-        padding-top: 20%;
-        padding-bottom: 5%;
+        margin-bottom: 2rem;
     }
 }
