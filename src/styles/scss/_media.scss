@@ -266,9 +266,15 @@
     .contactNav{
 
         padding-top: 10vh; 
-        
+
         .heading{
             font-size: 2rem;
+        }
+
+        .contactBar{
+            .plainText {
+                font-size: 1rem;
+            }
         }
 
     }
