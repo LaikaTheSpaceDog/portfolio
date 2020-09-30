@@ -451,7 +451,8 @@ table {
     padding-top: 25%; }
   .card {
     height: 40%;
-    min-height: 40vh; }
+    min-height: 40vh;
+    margin: 1rem 2rem; }
     .card .cardText {
       font-size: .75rem; }
     .card .cardLinkText {
