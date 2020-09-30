@@ -450,11 +450,11 @@ table {
     font-size: 2rem;
     padding-top: 25%; }
   .card {
-    height: 60%;
-    min-height: 60vh;
+    height: 50%;
+    min-height: 50vh;
     margin: 0rem 2rem; }
     .card .cardText {
-      font-size: .75rem; }
+      font-size: .65rem; }
     .card .cardLinkText {
       font-size: 1.5rem; }
     .card .cardHeading {
