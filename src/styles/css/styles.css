@@ -180,7 +180,7 @@ table {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center; }
   .jumbo .plainText.description {
     padding: 0 5rem;
@@ -440,10 +440,12 @@ table {
     font-size: 1rem;
     width: 80vw;
     padding: 0 2rem; }
-  .jumbo .navList.dropdown .dropBtn {
-    font-size: 2rem; }
-  .jumbo .navList.dropdown .dropContent .navLinkBox .navLink {
-    font-size: 1.75rem; }
+  .jumbo .navList.dropdown {
+    margin-top: 0; }
+    .jumbo .navList.dropdown .dropBtn {
+      font-size: 2rem; }
+    .jumbo .navList.dropdown .dropContent .navLinkBox .navLink {
+      font-size: 1.75rem; }
   .cardGroupSnapHeading {
     font-size: 2rem;
     padding-top: 25%; }
