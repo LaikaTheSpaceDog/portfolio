@@ -459,8 +459,10 @@ table {
       font-size: 1.5rem; }
     .card .cardHeading {
       font-size: 2rem; }
-  .contactNav .heading {
-    font-size: 2.5rem; }
+  .contactNav {
+    padding-top: 10vh; }
+    .contactNav .heading {
+      font-size: 2rem; }
   .down {
     padding-bottom: 1rem; }
   .up {
