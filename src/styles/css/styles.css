@@ -83,7 +83,9 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-  width: 100%; }
+  width: 100%;
+  position: relative;
+  top: 1rem; }
   .navList .navLink {
     margin: 0 4rem; }
   .navList .dropBtn {
@@ -172,18 +174,18 @@ table {
 
 .jumbo {
   background-color: #D77356;
-  padding: 2rem 0;
+  margin-top: 2rem;
   width: 100%;
   height: 100vh;
-  overflow: none;
   text-align: center;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center; }
   .jumbo .plainText.description {
     padding: 0 5rem;
+    padding-bottom: 2rem;
     margin-top: 10vh; }
   .jumbo .jumboName {
     width: 100%; }
@@ -196,9 +198,8 @@ table {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center; }
-  .jumbo .scrollWhite.down {
-    position: absolute;
-    bottom: 0; }
+  .jumbo .scrollWhite {
+    padding-top: 2rem; }
 
 .card {
   border: 1px #274654 solid;
@@ -221,7 +222,8 @@ table {
 
 .cardGroup {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  align-items: center; }
   .cardGroup .card {
     margin: 2rem; }
   .cardGroup .cardSnap.snap800 .cardsSnapHeading {
@@ -270,8 +272,7 @@ table {
   filter: invert(84%) sepia(32%) saturate(420%) hue-rotate(196deg) brightness(107%) contrast(112%); }
 
 .contactIcon {
-  min-width: 10vw;
-  max-width: 15vw;
+  width: 100px;
   filter: invert(84%) sepia(32%) saturate(420%) hue-rotate(196deg) brightness(107%) contrast(112%); }
 
 .email {
@@ -333,7 +334,6 @@ table {
       min-height: 0;
       height: 100vh;
       height: calc(var(--vh, 1vh) * 100);
-      overflow-y: scroll;
       scroll-snap-align: start;
       display: flex;
       flex-direction: column;
@@ -363,35 +363,36 @@ table {
     font-size: 3.5rem; }
   .jumbo .plainText.description {
     font-size: 1.75rem;
-    margin-bottom: 15%;
     margin-top: 10%; }
-  .navList.dropdown .dropBtn {
-    display: block;
-    padding: 16px;
-    font-family: "OstrichSans", Arial, sans-serif;
-    font-size: 3rem;
-    color: #F8F8FF;
-    background-color: #D77356;
-    border: none;
-    cursor: pointer; }
-  .navList.dropdown .dropContent {
-    display: none;
-    width: 65%;
-    position: absolute;
-    background-color: #D77356;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1; }
-  .navList.dropdown .dropContent .navLinkBox {
-    padding: 3%;
-    text-decoration: none;
-    display: block;
-    width: auto;
-    text-align: center; }
-    .navList.dropdown .dropContent .navLinkBox .navLink {
-      font-size: 2rem; }
-  .navList.dropdown .dropContent .navLinkBox:hover {
-    background-color: #D77356; }
+  .navList.dropdown {
+    margin-top: 2rem; }
+    .navList.dropdown .dropBtn {
+      display: block;
+      padding: 16px;
+      font-family: "OstrichSans", Arial, sans-serif;
+      font-size: 3rem;
+      color: #F8F8FF;
+      background-color: #D77356;
+      border: none;
+      cursor: pointer; }
+    .navList.dropdown .dropContent {
+      display: none;
+      width: 65%;
+      position: absolute;
+      background-color: #D77356;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1; }
+    .navList.dropdown .dropContent .navLinkBox {
+      padding: 3%;
+      text-decoration: none;
+      display: block;
+      width: auto;
+      text-align: center; }
+      .navList.dropdown .dropContent .navLinkBox .navLink {
+        font-size: 2rem; }
+    .navList.dropdown .dropContent .navLinkBox:hover {
+      background-color: #D77356; }
   .navList.dropdown:hover .dropContent {
     display: block; }
   .navList.dropdown:hover .dropbtn {
@@ -399,7 +400,11 @@ table {
   .contactNav .heading {
     font-size: 6rem; }
   .contactNav .subHeading {
-    font-size: 3.5rem; } }
+    font-size: 3.5rem; }
+  .contactIcon {
+    width: 75px; }
+  .contactNav .plainText {
+    font-size: 1.5rem; } }
 
 @media only screen and (max-width: 500px) {
   .jumbo .heading {
@@ -414,13 +419,16 @@ table {
     width: 80vw;
     padding: 0 2rem; }
   .contactNav {
-    height: 80vh; }
+    height: 80vh;
+    justify-content: flex-start; }
     .contactNav .contactBar {
       flex-direction: column;
       justify-content: space-around;
       height: 50%; }
       .contactNav .contactBar .plainText {
         font-size: 1.5rem; }
+      .contactNav .contactBar .contactIcon {
+        padding: 1rem 0; }
   .footerText {
     font-size: 1.5rem; } }
 

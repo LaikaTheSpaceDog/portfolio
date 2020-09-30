@@ -17,6 +17,8 @@
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    position: relative;
+    top: 1rem;
 
     .navLink {
         margin: 0 4rem;
