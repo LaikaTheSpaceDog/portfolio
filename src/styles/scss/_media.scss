@@ -226,7 +226,7 @@
         .navList.dropdown{
 
             margin-top: 0;
-            
+
             .dropBtn{
                 font-size: 2rem;
             }
@@ -244,6 +244,10 @@
         padding-top: 25%;
     }
     .card{
+
+        height: 50%;
+        min-height: 50vh;
+
         .cardText{
             font-size: .75rem;
         }
