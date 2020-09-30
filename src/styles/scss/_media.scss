@@ -283,6 +283,10 @@
             }
     
         }
+
+        .contactIcon{
+            width: 50px;
+        }
     }
 
     .down {
@@ -291,9 +295,5 @@
 
     .up {
         padding-top: 1rem;
-    }
-
-    #root {
-        scroll-snap-type: y proximity;
     }
 }

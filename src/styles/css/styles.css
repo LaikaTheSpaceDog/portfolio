@@ -469,9 +469,9 @@ table {
         font-size: 2rem; }
       .contact .contactNav .contactBar .plainText {
         font-size: 1rem; }
+    .contact .contactIcon {
+      width: 50px; }
   .down {
     padding-bottom: 1rem; }
   .up {
-    padding-top: 1rem; }
-  #root {
-    scroll-snap-type: y proximity; } }
+    padding-top: 1rem; } }
