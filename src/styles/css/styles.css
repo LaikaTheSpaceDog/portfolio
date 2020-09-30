@@ -459,13 +459,19 @@ table {
       font-size: 1.5rem; }
     .card .cardHeading {
       font-size: 2rem; }
-  .contactNav {
-    padding-top: 2.5vh; }
-    .contactNav .heading {
-      font-size: 2rem; }
-    .contactNav .contactBar .plainText {
-      font-size: 1rem; }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .contact .contactNav {
+      padding-top: 2.5vh; }
+      .contact .contactNav .heading {
+        font-size: 2rem; }
+      .contact .contactNav .contactBar .plainText {
+        font-size: 1rem; }
   .down {
     padding-bottom: 1rem; }
   .up {
-    padding-top: 1rem; } }
+    padding-top: 1rem; }
+  #root {
+    scroll-snap-type: y proximity; } }

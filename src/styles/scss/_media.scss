@@ -263,20 +263,26 @@
 
     }
 
-    .contactNav{
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
 
-        padding-top: 2.5vh; 
+        .contactNav{
 
-        .heading{
-            font-size: 2rem;
-        }
-
-        .contactBar{
-            .plainText {
-                font-size: 1rem;
+            padding-top: 2.5vh; 
+    
+            .heading{
+                font-size: 2rem;
             }
+    
+            .contactBar{
+                .plainText {
+                    font-size: 1rem;
+                }
+            }
+    
         }
-
     }
 
     .down {
@@ -285,5 +291,9 @@
 
     .up {
         padding-top: 1rem;
+    }
+
+    #root {
+        scroll-snap-type: y proximity;
     }
 }
