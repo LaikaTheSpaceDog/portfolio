@@ -36,7 +36,7 @@ body {
 
 .cardText {
   font-family: "Noticia", serif;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   color: #274654; }
 
 .cardHeading {
@@ -249,7 +249,7 @@ table {
   padding-top: 1.5rem;
   padding-bottom: 0.5rem;
   position: absolute;
-  bottom: 1rem; }
+  bottom: 0.1rem; }
   .cardLinks .cardLinkText {
     padding: 0 2rem; }
 
