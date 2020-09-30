@@ -454,10 +454,14 @@ table {
     min-height: 50vh;
     margin: 0rem 2rem; }
     .card .cardText {
-      font-size: .65rem; }
+      font-size: .75rem; }
     .card .cardLinkText {
       font-size: 1.5rem; }
     .card .cardHeading {
       font-size: 2rem; }
   .contactNav .heading {
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+  .down {
+    padding-bottom: 1rem; }
+  .up {
+    padding-top: 1rem; } }
