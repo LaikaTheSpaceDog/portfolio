@@ -15,7 +15,7 @@ const About = () => (
                     <li><a className="navLink" href="#contact">Contact</a></li>
                 </div>
             </ul>
-            <section>
+            <section className="jumboName">
                 <h1 className="heading">Oscar Wales</h1>
                 <h2 className="subHeading">Junior Developer</h2>
             </section>

@@ -20,12 +20,31 @@
     .card {
         margin: 2rem;
     }
+
+    .cardSnap.snap800{
+
+        .cardsSnapHeading {
+            display: none;
+        
+            .cardGroupSnapHeading {
+                display: none;
+            }
+        }
+
+        .scrollSnap {
+            display: none;
+        }
+    }
 }
 
 .projects {
     background-color: $ghost;
     height: 100vh;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .cardLinks {

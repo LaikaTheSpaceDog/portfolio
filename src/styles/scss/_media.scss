@@ -1,0 +1,88 @@
+@media only screen and (max-width: 800px) {
+    
+    .navList {
+        
+        .navLink {
+            margin: 0 2rem;
+        }
+    }
+
+    .snapWide {
+        scroll-snap-align: none;
+    }
+
+    .projects {
+        height: 100%;
+
+        .scroll {
+            display: none;
+        }
+
+        .cardsHeading {
+            display: none;
+        }
+    }
+    
+    .cardGroup {
+        flex-direction: column;
+        align-items: center;
+
+        .cardSnap.snap800 {
+            width: 100%;
+            min-height: 0;
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-align: start;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .cardsSnapHeading {
+                display: block;
+
+                .cardGroupSnapHeading {
+                    display: block;
+                }
+            }
+
+            .card {
+                width: 70%;
+
+                .cardImg {
+                    width: 60%;
+                }
+
+            }
+
+            .scrollSnap {
+                display: block;
+            }
+            
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .navLinkBox {
+        width: 250px;
+    }
+    
+    .jumbo {
+
+        .heading{
+            font-size: 5.5rem;
+        }
+
+        .subHeading{
+            font-size: 3.5rem;
+        }
+
+        .plainText.description {
+            font-size: 1.75rem;
+            margin-bottom: 15%;
+        }
+    }
+
+}

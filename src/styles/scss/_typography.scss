@@ -54,7 +54,7 @@ $fontStackNoticia: 'Noticia', serif;
     text-align: center;
 }
 
-.cardGroupHeading {
+.cardGroupHeading, .cardGroupSnapHeading {
     font-family: $fontStackOstrich-Bold;
     font-size: 3rem;
     color: $orange;
