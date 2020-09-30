@@ -5,11 +5,17 @@
     padding: 1rem;
     text-align: center;
     min-height: 60vh;
+    height: 60%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .cardImg {
     width: 90%;
+    height: 30%;
     padding-bottom: 1rem;
 }
 
@@ -45,6 +51,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .cardLinks {
@@ -53,6 +60,12 @@
     list-style: none;
     padding-top: 1.5rem;
     padding-bottom: 0.5rem;
+    position: absolute;
+    bottom: 1rem;
+
+    .cardLinkText{
+        padding: 0 2rem;
+    }
 }
 
 .cardsHeading {

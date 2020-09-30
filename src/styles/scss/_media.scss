@@ -1,9 +1,9 @@
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1050px) {
+    
     
     .navList {
-        
-        .navLink {
-            margin: 0 2rem;
+            .navLink {
+                margin: 0 2rem;
         }
     }
 
@@ -48,9 +48,16 @@
 
             .card {
                 width: 70%;
+                justify-content: space-evenly;
 
                 .cardImg {
                     width: 60%;
+                    height: auto;
+                }
+
+                .cardLinks {
+                    position: relative;
+                    bottom: auto;
                 }
 
             }
@@ -64,15 +71,12 @@
 }
 
 @media only screen and (max-width: 600px) {
-
-    .navLinkBox {
-        width: 250px;
-    }
     
     .jumbo {
 
         .heading{
-            font-size: 5.5rem;
+            font-size: 6rem;
+            margin-top: 14vh;
         }
 
         .subHeading{
@@ -82,7 +86,153 @@
         .plainText.description {
             font-size: 1.75rem;
             margin-bottom: 15%;
+            margin-top: 10%;
         }
     }
 
+    .navList.dropdown {
+
+        .dropBtn {
+            display: block;
+            padding: 16px;
+            font-family: $fontStackOstrich;
+            font-size: 3rem;
+            color: $ghost;
+            background-color: $orange;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropContent {
+            display: none;
+            width: 50%;
+            position: absolute;
+            background-color: $orange;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+            
+        .dropContent .navLinkBox {
+            color: black;
+            padding: 3%;
+            text-decoration: none;
+            display: block;
+            width: auto;
+            text-align: center;
+            .navLink {
+                font-size: 2rem;
+            }
+        }
+        
+        .dropContent .navLinkBox:hover {background-color: $orange}
+
+    }
+
+    .navList.dropdown:hover .dropContent {
+        display: block;
+    }
+
+    .navList.dropdown.dropBtn:focus .dropContent {
+        display: block;
+    }
+      
+    .navList.dropdown:hover .dropbtn {
+        background-color: $orange;
+    }
+
+    .contactNav{
+        .heading{
+            font-size: 6rem;
+        }
+        .subHeading{
+            font-size: 3.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .jumbo{
+
+        .heading{
+            font-size: 4rem;
+        }
+
+        .plainText.description{
+            font-size: 1.5rem;
+            padding: 0 2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 400px){
+    
+    .jumbo{
+        .plainText.description{
+            font-size: 1rem;
+            width: 80vw;
+            padding: 0 2rem;
+        }
+    }
+    
+    .contactNav{
+        height: 80vh;
+        
+        .contactBar{
+            flex-direction: column;
+            justify-content: space-around;
+            height: 50%;
+    
+            .plainText {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+
+    .footerText{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    
+    .jumbo{
+        .heading{
+            font-size: 2rem;
+        }
+        .subHeading{
+            font-size: 1.5rem;
+        }
+
+        .plainText.description{
+            font-size: 1rem;
+            width: 80vw;
+            padding: 0 2rem;
+        }
+
+        .navList.dropdown{
+            .dropBtn{
+                font-size: 2rem;
+            }
+            .dropContent .navLinkBox{
+                .navLink {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .card{
+        .cardText{
+            font-size: 1rem;
+        }
+    }
+
+    .contactNav{
+        .heading{
+            font-size: 2rem;
+        }
+    }
 }

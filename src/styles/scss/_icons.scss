@@ -17,7 +17,8 @@
 }
 
 .contactIcon {
-    width: 10vw;
+    min-width: 10vw;
+    max-width: 15vw;
     filter: invert(84%) sepia(32%) saturate(420%) hue-rotate(196deg) brightness(107%) contrast(112%);
 }
 

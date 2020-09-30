@@ -21,6 +21,16 @@
     .navLink {
         margin: 0 4rem;
     }
+
+    .dropBtn {
+      display: none;
+    }
+
+    .dropContent {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+    }
 }
 
 .navLinkBox {

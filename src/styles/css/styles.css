@@ -66,10 +66,6 @@ body {
     text-decoration: none;
     color: #D77356; }
 
-.description {
-  margin-top: 10%;
-  margin-bottom: 10%; }
-
 .navLink {
   font-family: "OstrichSans", Arial, sans-serif;
   font-size: 3rem;
@@ -90,6 +86,12 @@ body {
   width: 100%; }
   .navList .navLink {
     margin: 0 4rem; }
+  .navList .dropBtn {
+    display: none; }
+  .navList .dropContent {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%; }
 
 .navLinkBox {
   width: 300px;
@@ -170,7 +172,7 @@ table {
 
 .jumbo {
   background-color: #D77356;
-  padding: 2rem 5rem;
+  padding: 2rem 0;
   width: 100%;
   height: 100vh;
   overflow: none;
@@ -178,14 +180,25 @@ table {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center; }
+  .jumbo .plainText.description {
+    padding: 0 5rem;
+    margin-top: 10vh; }
   .jumbo .jumboName {
-    width: 100vw; }
+    width: 100%; }
   .jumbo .heading {
     margin-top: 15vh; }
   .jumbo .subHeading {
     text-align: center; }
+  .jumbo .bottomJumbo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .jumbo .scrollWhite.down {
+    position: absolute;
+    bottom: 0; }
 
 .card {
   border: 1px #274654 solid;
@@ -194,10 +207,16 @@ table {
   padding: 1rem;
   text-align: center;
   min-height: 60vh;
-  position: relative; }
+  height: 60%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
 
 .cardImg {
   width: 90%;
+  height: 30%;
   padding-bottom: 1rem; }
 
 .cardGroup {
@@ -219,14 +238,19 @@ table {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  width: 100%; }
 
 .cardLinks {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
   padding-top: 1.5rem;
-  padding-bottom: 0.5rem; }
+  padding-bottom: 0.5rem;
+  position: absolute;
+  bottom: 1rem; }
+  .cardLinks .cardLinkText {
+    padding: 0 2rem; }
 
 .cardsHeading {
   text-align: center; }
@@ -246,7 +270,8 @@ table {
   filter: invert(84%) sepia(32%) saturate(420%) hue-rotate(196deg) brightness(107%) contrast(112%); }
 
 .contactIcon {
-  width: 10vw;
+  min-width: 10vw;
+  max-width: 15vw;
   filter: invert(84%) sepia(32%) saturate(420%) hue-rotate(196deg) brightness(107%) contrast(112%); }
 
 .email {
@@ -256,7 +281,8 @@ table {
   background-color: #D77356;
   height: 100vh;
   text-align: center;
-  position: relative; }
+  position: relative;
+  width: 100%; }
 
 .contactBar {
   display: flex;
@@ -288,7 +314,7 @@ table {
 .snapWide {
   scroll-snap-align: start; }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1050px) {
   .navList .navLink {
     margin: 0 2rem; }
   .snapWide {
@@ -317,19 +343,103 @@ table {
         .cardGroup .cardSnap.snap800 .cardsSnapHeading .cardGroupSnapHeading {
           display: block; }
       .cardGroup .cardSnap.snap800 .card {
-        width: 70%; }
+        width: 70%;
+        justify-content: space-evenly; }
         .cardGroup .cardSnap.snap800 .card .cardImg {
-          width: 60%; }
+          width: 60%;
+          height: auto; }
+        .cardGroup .cardSnap.snap800 .card .cardLinks {
+          position: relative;
+          bottom: auto; }
       .cardGroup .cardSnap.snap800 .scrollSnap {
         display: block; } }
 
 @media only screen and (max-width: 600px) {
-  .navLinkBox {
-    width: 250px; }
   .jumbo .heading {
-    font-size: 5.5rem; }
+    font-size: 6rem;
+    margin-top: 14vh; }
   .jumbo .subHeading {
     font-size: 3.5rem; }
   .jumbo .plainText.description {
     font-size: 1.75rem;
-    margin-bottom: 15%; } }
+    margin-bottom: 15%;
+    margin-top: 10%; }
+  .navList.dropdown .dropBtn {
+    display: block;
+    padding: 16px;
+    font-family: "OstrichSans", Arial, sans-serif;
+    font-size: 3rem;
+    color: #F8F8FF;
+    background-color: #D77356;
+    border: none;
+    cursor: pointer; }
+  .navList.dropdown .dropContent {
+    display: none;
+    width: 50%;
+    position: absolute;
+    background-color: #D77356;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; }
+  .navList.dropdown .dropContent .navLinkBox {
+    color: black;
+    padding: 3%;
+    text-decoration: none;
+    display: block;
+    width: auto;
+    text-align: center; }
+    .navList.dropdown .dropContent .navLinkBox .navLink {
+      font-size: 2rem; }
+  .navList.dropdown .dropContent .navLinkBox:hover {
+    background-color: #D77356; }
+  .navList.dropdown:hover .dropContent {
+    display: block; }
+  .navList.dropdown.dropBtn:focus .dropContent {
+    display: block; }
+  .navList.dropdown:hover .dropbtn {
+    background-color: #D77356; }
+  .contactNav .heading {
+    font-size: 6rem; }
+  .contactNav .subHeading {
+    font-size: 3.5rem; } }
+
+@media only screen and (max-width: 500px) {
+  .jumbo .heading {
+    font-size: 4rem; }
+  .jumbo .plainText.description {
+    font-size: 1.5rem;
+    padding: 0 2rem; } }
+
+@media only screen and (max-width: 400px) {
+  .jumbo .plainText.description {
+    font-size: 1rem;
+    width: 80vw;
+    padding: 0 2rem; }
+  .contactNav {
+    height: 80vh; }
+    .contactNav .contactBar {
+      flex-direction: column;
+      justify-content: space-around;
+      height: 50%; }
+      .contactNav .contactBar .plainText {
+        font-size: 1.5rem; }
+  .footerText {
+    font-size: 1.5rem; } }
+
+@media only screen and (max-width: 350px) {
+  .jumbo .heading {
+    font-size: 2rem; }
+  .jumbo .subHeading {
+    font-size: 1.5rem; }
+  .jumbo .plainText.description {
+    font-size: 1rem;
+    width: 80vw;
+    padding: 0 2rem; }
+  .jumbo .navList.dropdown .dropBtn {
+    font-size: 2rem; }
+  .jumbo .navList.dropdown .dropContent .navLinkBox .navLink {
+    font-size: 1.5rem; }
+  .card .cardText {
+    font-size: 1rem; }
+  .contactNav .heading {
+    font-size: 2rem; } }
