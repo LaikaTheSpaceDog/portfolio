@@ -132,10 +132,6 @@
     .navList.dropdown:hover .dropContent {
         display: block;
     }
-
-    .navList.dropdown.dropBtn:active .dropContent {
-        display: block;
-    }
       
     .navList.dropdown:hover .dropbtn {
         background-color: $orange;

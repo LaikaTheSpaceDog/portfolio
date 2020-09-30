@@ -394,8 +394,6 @@ table {
     background-color: #D77356; }
   .navList.dropdown:hover .dropContent {
     display: block; }
-  .navList.dropdown.dropBtn:active .dropContent {
-    display: block; }
   .navList.dropdown:hover .dropbtn {
     background-color: #D77356; }
   .contactNav .heading {
