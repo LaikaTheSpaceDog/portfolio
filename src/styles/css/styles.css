@@ -488,7 +488,7 @@ table {
     .cardGroup .cardSnap.snap800 .card .cardLinks {
       padding-top: 0.5rem; }
   .contact {
-    justify-content: center; }
+    justify-content: space-between; }
     .contact .contactNav {
       padding-top: 1vh; }
   .down {
