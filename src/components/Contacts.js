@@ -8,7 +8,7 @@ import Footer from "./Footer";
 const Contacts = () => (
     <>
         <article className="contact snap" id="contact">
-        <a href="#projects"><img className="scrollWhite up" src={ scrollUp } alt="Scroll up arrow" /></a>
+        <a href="#project3"><img className="scrollWhite up" src={ scrollUp } alt="Scroll up arrow" /></a>
             <section className="contactNav">
                 <h1 className="heading">Contact</h1>
                 <section className="contactBar">

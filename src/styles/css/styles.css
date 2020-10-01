@@ -431,7 +431,7 @@ table {
   .footerText {
     font-size: 1.5rem; } }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 350px), screen and (orientation: landscape) and (min-device-width: 319px) and (max-device-width: 480px) {
   .jumbo .heading {
     font-size: 2.5rem; }
   .jumbo .subHeading {
