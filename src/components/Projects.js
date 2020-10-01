@@ -19,13 +19,17 @@ const Projects = () => (
                         <h2 className="cardGroupSnapHeading">Project 1</h2>
                     </header>
                     <article className="card">
-                        <img className="cardImg" src={ pingPong } alt="Landing page of pong-themed ping-pong tournament app" />
-                        <h3 className="cardHeading">(Ping)-Pong</h3>
-                        <p className="cardText">Retro Pong-themed tool that randomly created pairings for a table tennis tournament bracket from a list of names collected from the user. UI built using React and Redux for state management.</p>
-                        <ul className="cardLinks">
-                            <li className="cardLinkText"><a href="https://github.com/LaikaTheSpaceDog/pong">Repo</a></li>
-                            <li className="cardLinkText"><a href="https://laikathespacedog.github.io/pong/#/">Live</a></li>
-                        </ul>
+                        <div className="mobLandDiv1">
+                            <img className="cardImg" src={ pingPong } alt="Landing page of pong-themed ping-pong tournament app" />
+                        </div>
+                        <div className="mobLandDiv2">
+                            <h3 className="cardHeading">(Ping)-Pong</h3>
+                            <p className="cardText">Retro Pong-themed tool that randomly created pairings for a table tennis tournament bracket from a list of names collected from the user. UI built using React and Redux for state management.</p>
+                            <ul className="cardLinks">
+                                <li className="cardLinkText"><a href="https://github.com/LaikaTheSpaceDog/pong">Repo</a></li>
+                                <li className="cardLinkText"><a href="https://laikathespacedog.github.io/pong/#/">Live</a></li>
+                            </ul>
+                        </div>
                     </article>
                     <a href="#proj2"><img className="scrollSnap down" src={ scrollDown } alt="Scroll down arrow" /> </a>
                 </section>
