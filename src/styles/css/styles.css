@@ -489,6 +489,8 @@ table {
       padding-top: 0.5rem; }
   .contact {
     justify-content: flex-start; }
+    .contact .heading {
+      margin: 1rem; }
     .contact .scroll {
       padding-bottom: 1.5rem; }
     .contact .contactNav {
