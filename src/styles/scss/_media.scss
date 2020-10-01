@@ -313,6 +313,7 @@ and (max-device-width: 480px) {
             .card{
                 width: 80%;
                 margin: 1rem;
+                flex-direction: column;
 
                 .cardImg{
                     // width: 35%;

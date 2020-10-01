@@ -481,7 +481,8 @@ table {
     padding-top: 10%; }
   .cardGroup .cardSnap.snap800 .card {
     width: 80%;
-    margin: 1rem; }
+    margin: 1rem;
+    flex-direction: column; }
     .cardGroup .cardSnap.snap800 .card .cardImg {
       display: none; }
     .cardGroup .cardSnap.snap800 .card .cardLinks {
