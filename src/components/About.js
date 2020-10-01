@@ -20,7 +20,7 @@ const About = () => (
             </div>
             <section className="jumboName">
                 <h1 className="heading">Oscar Wales</h1>
-                <h2 className="subHeading">Junior Developer</h2>
+                <h2 className="subHeading">Full Stack Developer</h2>
             </section>
             <section className="bottomJumbo">
                 <p className="plainText description">I'm a recent graduate of Develop Me's Coding Fellowship Bootcamp with a passion for building beautiful webistes and apps using tidy and efficent code.</p>
