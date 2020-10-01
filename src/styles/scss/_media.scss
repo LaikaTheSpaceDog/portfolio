@@ -326,7 +326,11 @@ and (max-device-width: 480px) {
     }
     
     .contact{
-        justify-content: space-between;
+        justify-content: flex-start;
+
+        .scroll{
+            padding-bottom: 1.5rem;
+        }
 
         .contactNav{
             padding-top: 1vh;
