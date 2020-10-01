@@ -481,9 +481,14 @@ table {
     padding-top: 10%; }
   .cardGroup .cardSnap.snap800 .card {
     width: 80%;
-    margin: 1rem; }
+    margin: 1rem;
+    flex-direction: row; }
+    .cardGroup .cardSnap.snap800 .card .mobLandDiv2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
     .cardGroup .cardSnap.snap800 .card .cardImg {
-      width: 25%; }
+      width: 35%; }
     .cardGroup .cardSnap.snap800 .card .cardLinks {
       padding-top: 0.5rem; }
   .contact .contactNav {
