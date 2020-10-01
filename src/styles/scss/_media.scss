@@ -313,15 +313,10 @@ and (max-device-width: 480px) {
             .card{
                 width: 80%;
                 margin: 1rem;
-                flex-direction: row;
 
-                .mobLandDiv2{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-evenly;
-                }
                 .cardImg{
-                    width: 35%;
+                    // width: 35%;
+                    display: none;
                 }
                 .cardLinks{
                     padding-top: 0.5rem;
