@@ -316,7 +316,6 @@ and (max-device-width: 480px) {
                 flex-direction: column;
 
                 .cardImg{
-                    // width: 35%;
                     display: none;
                 }
                 .cardLinks{
@@ -327,6 +326,8 @@ and (max-device-width: 480px) {
     }
     
     .contact{
+        justify-content: flex-start;
+
         .contactNav{
             padding-top: 1vh;
         }
@@ -338,5 +339,8 @@ and (max-device-width: 480px) {
 
     .up {
         padding-top: .5rem;
+    }
+    #root {
+        scroll-snap-type: y proximity;
     }
 }
