@@ -479,11 +479,13 @@ table {
 @media screen and (orientation: landscape) and (min-device-width: 319px) and (max-device-width: 480px) {
   .cardGroupSnapHeading {
     padding-top: 10%; }
-  .cardGroup .card {
+  .cardGroup .cardSnap.snap800 .card {
     width: 80%;
     margin: 1rem; }
-    .cardGroup .card .cardImg {
-      width: 20%; }
+    .cardGroup .cardSnap.snap800 .card .cardImg {
+      width: 25%; }
+    .cardGroup .cardSnap.snap800 .card .cardLinks {
+      padding-top: 0.5rem; }
   .contact .contactNav {
     padding-top: 1vh; }
   .down {

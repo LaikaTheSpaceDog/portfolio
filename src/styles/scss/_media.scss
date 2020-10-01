@@ -309,11 +309,16 @@ and (max-device-width: 480px) {
     }
 
     .cardGroup{
-        .card{
-            width: 80%;
-            margin: 1rem;
-            .cardImg{
-                width: 20%;
+        .cardSnap.snap800{
+            .card{
+                width: 80%;
+                margin: 1rem;
+                .cardImg{
+                    width: 25%;
+                }
+                .cardLinks{
+                    padding-top: 0.5rem;
+                }
             }
         }
     }
