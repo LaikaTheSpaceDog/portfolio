@@ -2,6 +2,7 @@
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     max-height: 100vh;
+    scroll-behavior: smooth;
 }
 
 .snap {

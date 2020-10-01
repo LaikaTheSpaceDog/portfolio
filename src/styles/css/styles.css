@@ -277,6 +277,9 @@ table {
 .email {
   text-align: center; }
 
+.proj3 {
+  display: none; }
+
 .contact {
   background-color: #D77356;
   height: 100vh;
@@ -306,7 +309,8 @@ table {
 #root {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  max-height: 100vh; }
+  max-height: 100vh;
+  scroll-behavior: smooth; }
 
 .snap {
   scroll-snap-align: start; }
@@ -352,7 +356,11 @@ table {
           position: relative;
           bottom: auto; }
       .cardGroup .cardSnap.snap800 .scrollSnap {
-        display: block; } }
+        display: block; }
+  .contact .scrollWhite.projs {
+    display: none; }
+  .contact .scrollWhite.proj3 {
+    display: inline; } }
 
 @media only screen and (max-width: 600px) {
   .jumbo .heading {
