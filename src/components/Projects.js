@@ -2,7 +2,7 @@ import React from 'react';
 import scrollUp from "../styles/assets/icons/double-arrow-top.svg";
 import scrollDown from "../styles/assets/icons/double-arrow-bottom.svg";
 import pingPong from "../styles/assets/images/pong.png";
-import nerd from "../styles/assets/images/nerd.png";
+import food from "../styles/assets/images/food.png";
 import pet from "../styles/assets/images/pet.png";
 
 const Projects = () => (
@@ -35,12 +35,12 @@ const Projects = () => (
                         <h2 className="cardGroupSnapHeading">Project 2</h2>
                     </header>
                     <article className="card">
-                        <img className="cardImg" src={ nerd } alt="Landing page of Nerd Words" />
-                        <h3 className="cardHeading">Nerd Words</h3>
-                        <p className="cardText">This dictionary app for beginners to programming was built as a group project. I was responsible for the the back end of this group project that I built using Laravel and AWS.</p>
+                        <img className="cardImg" src={ food } alt="Landing page of Food Atlas" />
+                        <h3 className="cardHeading">Food Atlas</h3>
+                        <p className="cardText">Mini web app built with React that combines three of my greatest loves: travel, geography and food! This app allows you to explore the national dish of each country through an interactive world map.</p>
                         <ul className="cardLinks">
-                            <li className="cardLinkText"><a href="https://github.com/LaikaTheSpaceDog/final-project-back-end">Repo</a></li>
-                            <li className="cardLinkText"><a href="https://alexanderbraatz.github.io/final-project-front-end/#/words">Live</a></li>
+                            <li className="cardLinkText"><a href="https://github.com/LaikaTheSpaceDog/food-atlas">Repo</a></li>
+                            <li className="cardLinkText"><a href="https://laikathespacedog.github.io/food-atlas/#">Live</a></li>
                         </ul>
                     </article>
                     <a href="#proj3"><img className="scrollSnap down" src={ scrollDown } alt="Scroll down arrow" /> </a>

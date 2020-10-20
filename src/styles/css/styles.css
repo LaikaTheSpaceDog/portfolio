@@ -43,7 +43,8 @@ body {
   font-family: "OstrichSans", Arial, sans-serif;
   font-size: 3rem;
   color: #D77356;
-  text-align: center; }
+  text-align: center;
+  padding-top: 1rem; }
 
 .cardGroupHeading, .cardGroupSnapHeading {
   font-family: "OstrichSans-Bold", Arial, sans-serif;
@@ -217,7 +218,7 @@ table {
 .cardImg {
   width: 90%;
   height: 30%;
-  padding-bottom: 1rem; }
+  border: 1px #274654 solid; }
 
 .cardGroup {
   display: flex;
