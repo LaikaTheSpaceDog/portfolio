@@ -1,0 +1,93 @@
+.bounceDown{
+    -moz-animation: bounceDown 2.5s infinite linear;
+    -o-animation: bounceDown 2.5s infinite linear;
+    -webkit-animation: bounceDown 2.5s infinite linear;
+    animation: bounceDown 2.5s infinite linear;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    position: relative;
+    display: inline-block;
+}
+
+@-webkit-keyframes bounceDown {
+    0% { top: 0; }
+    15% { top: -0.2em; }
+    25% { top: -0.3em; }
+    35% { top: -0.2em; }
+    40% { top: 0; }
+}
+@-moz-keyframes bounceDown {
+    0% { top: 0; }
+    15% { top: -0.2em; }
+    25% { top: -0.3em; }
+    35% { top: -0.2em }
+    40% { top: 0; }
+}
+@-o-keyframes bounceDown {
+    0% { top: 0; }
+    15% { top: -0.2em; }
+    25% { top: -0.3em; }
+    35% { top: -0.2em; }
+    40% { top: 0; }
+}
+@-ms-keyframes bounceDown {
+    0% { top: 0; }
+    15% { top: -0.2em; }
+    25% { top: -0.3em; }
+    35% { top: -0.2em; }
+    40% { top: 0; }
+}
+@keyframes bounceDown {
+    0% { top: 0; }
+    15% { top: -0.2em; }
+    25% { top: -0.3em; }
+    35% { top: -0.2em; }
+    40% { top: 0; }
+}
+
+.bounceUp{
+    -moz-animation: bounceUp 2.5s infinite linear;
+    -o-animation: bounceUp 2.5s infinite linear;
+    -webkit-animation: bounceUp 2.5s infinite linear;
+    animation: bounceUp 2.5s infinite linear;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    position: relative;
+    display: inline-block;
+}
+
+@-webkit-keyframes bounceUp {
+    0% { bottom: 0; }
+    15% { bottom: -0.2em; }
+    25% { bottom: -0.3em; }
+    35% { bottom: -0.2em; }
+    40% { bottom: 0; }
+}
+@-moz-keyframes bounceUp {
+    0% { bottom: 0; }
+    15% { bottom: -0.2em; }
+    25% { bottom: -0.3em; }
+    35% { bottom: -0.2em }
+    40% { bottom: 0; }
+}
+@-o-keyframes bounceUp {
+    0% { bottom: 0; }
+    15% { bottom: -0.2em; }
+    25% { bottom: -0.3em; }
+    35% { bottom: -0.2em; }
+    40% { bottom: 0; }
+}
+@-ms-keyframes bounceUp {
+    0% { bottom: 0; }
+    15% { bottom: -0.2em; }
+    25% { bottom: -0.3em; }
+    35% { bottom: -0.2em; }
+    40% { bottom: 0; }
+}
+@keyframes bounceUp {
+    0% { bottom: 0; }
+    15% { bottom: -0.2em; }
+    25% { bottom: -0.3em; }
+    35% { bottom: -0.2em; }
+    40% { bottom: 0; }
+}

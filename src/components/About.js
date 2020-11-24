@@ -25,7 +25,7 @@ const About = () => (
             <section className="bottomJumbo">
                 <p className="plainText description">I'm a recent graduate of Develop Me's Coding Fellowship Bootcamp with a passion for building beautiful webistes and apps using tidy and efficent code.</p>
             </section>
-            <a href="#projects"><img className="scrollWhite down" src={bottomArrow} alt="downwards pointing arrow"/></a>
+            <a href="#projects"><img className="scrollWhite down bounceDown" src={bottomArrow} alt="downwards pointing arrow"/></a>
         </article>
     </>
 );

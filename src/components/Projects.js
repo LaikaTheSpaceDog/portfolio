@@ -8,13 +8,13 @@ import pet from "../styles/assets/images/pet.png";
 const Projects = () => (
     <>
         <main className="projects snapWide" id="projects">
-        <a href="#about"><img className="scroll up" src={ scrollUp } alt="Scroll up arrow" /></a>
+        <a href="#about"><img className="scroll up bounceUp" src={ scrollUp } alt="Scroll up arrow" /></a>
             <header className="cardsHeading">
                 <h2 className="cardGroupHeading">Projects</h2>
             </header>
             <section className="cardGroup">
                 <section className="cardSnap snap800" id="proj1">
-                    <a href="#about"><img className="scrollSnap up" src={ scrollUp } alt="Scroll up arrow" /></a>
+                    <a href="#about"><img className="scrollSnap up bounceUp" src={ scrollUp } alt="Scroll up arrow" /></a>
                     <header className="cardsSnapHeading">
                         <h2 className="cardGroupSnapHeading">Project 1</h2>
                     </header>
@@ -27,10 +27,10 @@ const Projects = () => (
                             <li className="cardLinkText"><a href="https://laikathespacedog.github.io/pong/#/" target="_blank">Live</a></li>
                         </ul>
                     </article>
-                    <a href="#proj2"><img className="scrollSnap down" src={ scrollDown } alt="Scroll down arrow" /> </a>
+                    <a href="#proj2"><img className="scrollSnap down bounceDown" src={ scrollDown } alt="Scroll down arrow" /> </a>
                 </section>
                 <section className="cardSnap snap800" id="proj2">
-                    <a href="#proj1"><img className="scrollSnap up" src={ scrollUp } alt="Scroll up arrow" /></a>
+                    <a href="#proj1"><img className="scrollSnap up bounceUp" src={ scrollUp } alt="Scroll up arrow" /></a>
                     <header className="cardsSnapHeading">
                         <h2 className="cardGroupSnapHeading">Project 2</h2>
                     </header>
@@ -43,10 +43,10 @@ const Projects = () => (
                             <li className="cardLinkText"><a href="https://laikathespacedog.github.io/food-atlas/#" target="_blank">Live</a></li>
                         </ul>
                     </article>
-                    <a href="#proj3"><img className="scrollSnap down" src={ scrollDown } alt="Scroll down arrow" /> </a>
+                    <a href="#proj3"><img className="scrollSnap down bounceDown" src={ scrollDown } alt="Scroll down arrow" /> </a>
                 </section>
                 <section className="cardSnap snap800" id="proj3">
-                    <a href="#proj2"><img className="scrollSnap up" src={ scrollUp } alt="Scroll up arrow" /></a>
+                    <a href="#proj2"><img className="scrollSnap up bounceUp" src={ scrollUp } alt="Scroll up arrow" /></a>
                     <header className="cardsSnapHeading">
                         <h2 className="cardGroupSnapHeading">Project 3</h2>
                     </header>
@@ -58,10 +58,10 @@ const Projects = () => (
                             <li className="cardLinkText"><a href="https://github.com/LaikaTheSpaceDog/laravel_project_vet" target="_blank">Repo</a></li>
                         </ul>
                     </article>
-                    <a href="#contact"><img className="scrollSnap down" src={ scrollDown } alt="Scroll down arrow" /></a>
+                    <a href="#contact"><img className="scrollSnap down bounceDown" src={ scrollDown } alt="Scroll down arrow" /></a>
                 </section>
             </section>
-            <a href="#contact"><img className="scroll down" src={ scrollDown } alt="Scroll down arrow" /></a>
+            <a href="#contact"><img className="scroll down bounceDown" src={ scrollDown } alt="Scroll down arrow" /></a>
         </main>
     </>
 );

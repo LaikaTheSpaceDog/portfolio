@@ -32,7 +32,6 @@
             min-height: 0;
             height: 100vh;
             height: calc(var(--vh, 1vh) * 100);
-            // overflow-y: scroll;
             scroll-snap-align: start;
             display: flex;
             flex-direction: column;
@@ -76,6 +75,14 @@
         }
         .scrollWhite.proj3{
             display: inline;
+            -moz-animation: bounceUp 2.5s infinite linear;
+            -o-animation: bounceUp 2.5s infinite linear;
+            -webkit-animation: bounceUp 2.5s infinite linear;
+            animation: bounceUp 2.5s infinite linear;
+            -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+            position: relative;
+            display: inline-block;
         }
     }
 }
