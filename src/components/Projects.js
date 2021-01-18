@@ -21,7 +21,7 @@ const Projects = () => (
                     <article className="card">
                         <img className="cardImg" src={ pingPong } alt="Landing page of pong-themed ping-pong tournament app" />
                         <h3 className="cardHeading">(Ping)-Pong</h3>
-                        <p className="cardText">Retro Pong-themed tool that randomly created pairings for a table tennis tournament bracket from a list of names collected from the user. UI built using React and Redux for state management.</p>
+                        <p className="cardText">Retro Pong-themed tool that randomly created pairings for a table tennis tournament bracket from a list of names collected by the user. UI built using React with Redux for state management.</p>
                         <ul className="cardLinks">
                             <li className="cardLinkText"><a href="https://github.com/LaikaTheSpaceDog/pong" target="_blank">Repo</a></li>
                             <li className="cardLinkText"><a href="https://laikathespacedog.github.io/pong/#/" target="_blank">Live</a></li>
@@ -37,7 +37,7 @@ const Projects = () => (
                     <article className="card">
                         <img className="cardImg" src={ food } alt="Landing page of Food Atlas" />
                         <h3 className="cardHeading">Food Atlas</h3>
-                        <p className="cardText">Mini web app built with React that combines three of my greatest loves: travel, geography and food! This app allows you to explore the national dish of each country through an interactive world map.</p>
+                        <p className="cardText">Web app built with React and Laravel that combines three of my greatest loves: travel, geography and food! Explore the national dish of each country through an interactive world map and make your own list of favourite dishes.</p>
                         <ul className="cardLinks">
                             <li className="cardLinkText"><a href="https://github.com/LaikaTheSpaceDog/food-atlas" target="_blank">Repo</a></li>
                             <li className="cardLinkText"><a href="https://laikathespacedog.github.io/food-atlas/#" target="_blank">Live</a></li>
