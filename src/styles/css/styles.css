@@ -188,7 +188,8 @@ table {
     padding-bottom: 2rem;
     margin-top: 10vh; }
   .jumbo .jumboName {
-    width: 100%; }
+    width: 100%;
+    padding: 0 20px; }
   .jumbo .heading {
     margin-top: 15vh; }
   .jumbo .subHeading {
@@ -197,7 +198,8 @@ table {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center; }
+    align-items: center;
+    padding: 0 20px; }
   .jumbo .scrollWhite {
     padding-top: 2rem; }
 
@@ -356,6 +358,8 @@ table {
         .cardGroup .cardSnap.snap800 .card .cardLinks {
           position: relative;
           bottom: auto; }
+        .cardGroup .cardSnap.snap800 .card .cardText {
+          font-size: 1rem; }
       .cardGroup .cardSnap.snap800 .scrollSnap {
         display: block; }
   .contact .scrollWhite.projs {
@@ -380,6 +384,8 @@ table {
   .jumbo .plainText.description {
     font-size: 1.75rem;
     margin-top: 10%; }
+  .cardGroup .cardSnap.snap800 .card .cardText {
+    font-size: 0.85rem; }
   .navList.dropdown {
     margin-top: 2rem; }
     .navList.dropdown .dropBtn {

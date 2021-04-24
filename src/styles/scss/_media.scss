@@ -1,6 +1,4 @@
-@media only screen and (max-width: 1050px) {
-    
-    
+@media only screen and (max-width: 1050px) {    
     .navList {
             .navLink {
                 margin: 0 2rem;
@@ -60,6 +58,10 @@
                     bottom: auto;
                 }
 
+                .cardText {
+                    font-size: 1rem;
+                }
+
             }
 
             .scrollSnap {
@@ -104,6 +106,16 @@
             font-size: 1.75rem;
             // margin-bottom: 15%;
             margin-top: 10%;
+        }
+    }
+
+    .cardGroup {
+        .cardSnap.snap800 {
+            .card {
+                .cardText {
+                    font-size: 0.85rem;
+                }
+            }
         }
     }
 

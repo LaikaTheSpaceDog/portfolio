@@ -14,8 +14,8 @@ gulp.task('watch', () => {
       }
   });
 
-gulp.watch('**/*.*').on("change", reload);  
-gulp.watch(['src/styles/scss/**/*.scss'],
+gulp.watch('src/*.*').on("change", reload);  
+gulp.watch(['src/styles/scss/*.scss'],
 gulp.parallel(['minify-sass']));
 
 });
