@@ -225,11 +225,13 @@
     .contactNav{
         height: 80vh;
         justify-content: flex-start;
+        padding-top: 10vh;
         
         .contactBar{
             flex-direction: column;
             justify-content: space-around;
             height: 50%;
+            padding-top: 5vh;
     
             .plainText {
                 font-size: 1.5rem;
