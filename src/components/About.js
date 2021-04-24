@@ -23,7 +23,7 @@ const About = () => (
                 <h2 className="subHeading">Full Stack Developer</h2>
             </section>
             <section className="bottomJumbo">
-                <p className="plainText description">I'm a recent graduate of Develop Me's Coding Fellowship Bootcamp with a passion for building beautiful websites and apps using tidy and efficient code.</p>
+                <p className="plainText description">I love to build beautiful websites, working with a range of languages including HTML, CSS, SCSS, JavaScript and PHP and working with libraries and frameworks such as React, Redux, jQuery, Laravel and Wordpress.</p>
             </section>
             <a href="#projects"><img className="scrollWhite down bounceDown" src={bottomArrow} alt="downwards pointing arrow"/></a>
         </article>
