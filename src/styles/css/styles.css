@@ -386,7 +386,9 @@ table {
   .cardGroup .cardSnap.snap800 .card .cardText {
     font-size: 0.85rem; }
   .navList.dropdown {
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center; }
     .navList.dropdown .dropBtn {
       display: block;
       padding: 16px;
@@ -395,11 +397,14 @@ table {
       color: #F8F8FF;
       background-color: #D77356;
       border: none;
-      cursor: pointer; }
+      cursor: pointer;
+      background-color: #D77356; }
     .navList.dropdown .dropContent {
-      display: none;
+      display: flex;
+      flex-direction: column;
       width: 65%;
       position: absolute;
+      top: 75px;
       background-color: #D77356;
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -409,15 +414,10 @@ table {
       text-decoration: none;
       display: block;
       width: auto;
-      text-align: center; }
+      text-align: center;
+      background-color: #D77356; }
       .navList.dropdown .dropContent .navLinkBox .navLink {
         font-size: 2rem; }
-    .navList.dropdown .dropContent .navLinkBox:hover {
-      background-color: #D77356; }
-  .navList.dropdown:hover .dropContent {
-    display: block; }
-  .navList.dropdown:hover .dropbtn {
-    background-color: #D77356; }
   .contactNav .heading {
     font-size: 6rem; }
   .contactNav .subHeading {
