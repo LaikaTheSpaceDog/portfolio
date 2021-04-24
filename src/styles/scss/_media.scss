@@ -95,7 +95,6 @@
 
         .heading{
             font-size: 6rem;
-            margin-top: 14vh;
         }
 
         .subHeading{
@@ -205,6 +204,7 @@
     .cardGroup {
         .cardSnap.snap800 {
             .card {
+                margin: 1rem;
                 height: 50%;
                 min-height: 50vh;
             }
@@ -216,6 +216,9 @@
             font-size: 1rem;
             width: 80vw;
             padding: 0 2rem;
+        }
+        .heading {
+            margin-top: 5vh;
         }
     }
     

@@ -191,7 +191,7 @@ table {
     width: 100%;
     padding: 0 20px; }
   .jumbo .heading {
-    margin-top: 15vh; }
+    margin-top: 10vh; }
   .jumbo .subHeading {
     text-align: center; }
   .jumbo .bottomJumbo {
@@ -377,8 +377,7 @@ table {
 
 @media only screen and (max-width: 600px) {
   .jumbo .heading {
-    font-size: 6rem;
-    margin-top: 14vh; }
+    font-size: 6rem; }
   .jumbo .subHeading {
     font-size: 3.5rem; }
   .jumbo .plainText.description {
@@ -437,12 +436,15 @@ table {
 
 @media only screen and (max-width: 400px) {
   .cardGroup .cardSnap.snap800 .card {
+    margin: 1rem;
     height: 50%;
     min-height: 50vh; }
   .jumbo .plainText.description {
     font-size: 1rem;
     width: 80vw;
     padding: 0 2rem; }
+  .jumbo .heading {
+    margin-top: 5vh; }
   .contactNav {
     height: 80vh;
     justify-content: flex-start; }
