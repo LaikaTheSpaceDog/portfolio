@@ -23,8 +23,8 @@ const Projects = () => (
                         <h3 className="cardHeading">(Ping)-Pong</h3>
                         <p className="cardText">Retro Pong-themed tool that randomly created pairings for a table tennis tournament bracket from a list of names collected by the user. UI built using React with Redux for state management.</p>
                         <ul className="cardLinks">
-                            <li className="cardLinkText"><a href="https://github.com/LaikaTheSpaceDog/pong" target="_blank">Repo</a></li>
-                            <li className="cardLinkText"><a href="https://laikathespacedog.github.io/pong/#/" target="_blank">Live</a></li>
+                            <li className="cardLinkText"><a href="https://github.com/LaikaTheSpaceDog/pong" target="_blank" rel="noopener noreferrer">Repo</a></li>
+                            <li className="cardLinkText"><a href="https://laikathespacedog.github.io/pong/#/" target="_blank" rel="noopener noreferrer">Live</a></li>
                         </ul>
                     </article>
                     <a href="#proj2"><img className="scrollSnap down bounceDown" src={ scrollDown } alt="Scroll down arrow" /> </a>
@@ -39,8 +39,8 @@ const Projects = () => (
                         <h3 className="cardHeading">Food Atlas</h3>
                         <p className="cardText">Web app built with React and Laravel that combines three of my greatest loves: travel, geography and food! Explore the national dish of each country through an interactive world map and make your own list of favourite dishes.</p>
                         <ul className="cardLinks">
-                            <li className="cardLinkText"><a href="https://github.com/LaikaTheSpaceDog/food-atlas" target="_blank">Repo</a></li>
-                            <li className="cardLinkText"><a href="https://laikathespacedog.github.io/food-atlas/#" target="_blank">Live</a></li>
+                            <li className="cardLinkText"><a href="https://github.com/LaikaTheSpaceDog/food-atlas" target="_blank" rel="noopener noreferrer">Repo</a></li>
+                            <li className="cardLinkText"><a href="https://laikathespacedog.github.io/food-atlas/#" target="_blank" rel="noopener noreferrer">Live</a></li>
                         </ul>
                     </article>
                     <a href="#proj3"><img className="scrollSnap down bounceDown" src={ scrollDown } alt="Scroll down arrow" /> </a>
@@ -55,7 +55,7 @@ const Projects = () => (
                         <h3 className="cardHeading">Pet Database</h3>
                         <p className="cardText">I built this pet database during weeks 7 and 8 of the Develop Me Bootcamp using Laravel. This app has a RESTful API and a UI built with blade and basic Bootstrap styling.</p>
                         <ul className="cardLinks">
-                            <li className="cardLinkText"><a href="https://github.com/LaikaTheSpaceDog/laravel_project_vet" target="_blank">Repo</a></li>
+                            <li className="cardLinkText"><a href="https://github.com/LaikaTheSpaceDog/laravel_project_vet" target="_blank" rel="noopener noreferrer">Repo</a></li>
                         </ul>
                     </article>
                     <a href="#contact"><img className="scrollSnap down bounceDown" src={ scrollDown } alt="Scroll down arrow" /></a>
