@@ -3,7 +3,7 @@ import scrollUp from "../styles/assets/icons/double-arrow-top.svg";
 import scrollDown from "../styles/assets/icons/double-arrow-bottom.svg";
 import pingPong from "../styles/assets/images/pong.png";
 import food from "../styles/assets/images/food.png";
-import pet from "../styles/assets/images/pet.png";
+import zoe from "../styles/assets/images/zoe.png";
 
 const Projects = () => (
     <>
@@ -19,7 +19,9 @@ const Projects = () => (
                         <h2 className="cardGroupSnapHeading">Project 1</h2>
                     </header>
                     <article className="card">
-                        <img className="cardImg" src={ pingPong } alt="Landing page of pong-themed ping-pong tournament app" />
+                        <div className="cardImgContainer">
+                            <img className="cardImg" src={ pingPong } alt="Landing page of pong-themed ping-pong tournament app" />
+                        </div>
                         <h3 className="cardHeading">(Ping)-Pong</h3>
                         <p className="cardText">Retro Pong-themed tool that randomly created pairings for a table tennis tournament bracket from a list of names collected by the user. UI built using React with Redux for state management.</p>
                         <ul className="cardLinks">
@@ -35,7 +37,9 @@ const Projects = () => (
                         <h2 className="cardGroupSnapHeading">Project 2</h2>
                     </header>
                     <article className="card">
-                        <img className="cardImg" src={ food } alt="Landing page of Food Atlas" />
+                        <div className="cardImgContainer">
+                            <img className="cardImg" src={ food } alt="Landing page of Food Atlas" />
+                        </div>
                         <h3 className="cardHeading">Food Atlas</h3>
                         <p className="cardText">Web app built with React and Laravel that combines three of my greatest loves: travel, geography and food! Explore the national dish of each country through an interactive world map and make your own list of favourite dishes.</p>
                         <ul className="cardLinks">
@@ -51,11 +55,13 @@ const Projects = () => (
                         <h2 className="cardGroupSnapHeading">Project 3</h2>
                     </header>
                     <article className="card">
-                        <img className="cardImg" src={ pet } alt="Home page of pet database" />
-                        <h3 className="cardHeading">Pet Database</h3>
-                        <p className="cardText">I built this pet database during weeks 7 and 8 of the Develop Me Bootcamp using Laravel. This app has a RESTful API and a UI built with blade and basic Bootstrap styling.</p>
+                        <div className="cardImgContainer">
+                            <img className="cardImg" src={ zoe } alt="Home page of pet database" />
+                        </div>
+                        <h3 className="cardHeading">Zoe Weldon Productions</h3>
+                        <p className="cardText">A Wordpress site built with a minimalist custom theme for an independent theatre company based in London. Live site coming soon!</p>
                         <ul className="cardLinks">
-                            <li className="cardLinkText"><a href="https://github.com/LaikaTheSpaceDog/laravel_project_vet" target="_blank" rel="noopener noreferrer">Repo</a></li>
+                            <li className="cardLinkText"><a href="https://github.com/LaikaTheSpaceDog/weldon-productions" target="_blank" rel="noopener noreferrer">Repo</a></li>
                         </ul>
                     </article>
                     <a href="#contact"><img className="scrollSnap down bounceDown" src={ scrollDown } alt="Scroll down arrow" /></a>
