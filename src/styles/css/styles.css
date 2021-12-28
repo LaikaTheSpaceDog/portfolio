@@ -44,7 +44,8 @@ body {
   font-size: 3rem;
   color: #D77356;
   text-align: center;
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  padding-bottom: 0.5rem; }
 
 .cardGroupHeading, .cardGroupSnapHeading {
   font-family: "OstrichSans-Bold", Arial, sans-serif;
