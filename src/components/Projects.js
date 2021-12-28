@@ -73,5 +73,3 @@ const Projects = () => (
 );
 
 export default Projects;
-
-//Test
