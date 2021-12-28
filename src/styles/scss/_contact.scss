@@ -4,6 +4,23 @@
     text-align: center;
     position: relative;
     width: 100%;
+
+    @include mediaMax($main){
+        .scrollWhite.projs{
+            display: none;
+        }
+        .scrollWhite.proj3{
+            display: inline;
+            -moz-animation: bounceUp 2.5s infinite linear;
+            -o-animation: bounceUp 2.5s infinite linear;
+            -webkit-animation: bounceUp 2.5s infinite linear;
+            animation: bounceUp 2.5s infinite linear;
+            -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+            position: relative;
+            display: inline-block;
+        }
+    }
 }
 
 .contactBar {
@@ -19,5 +36,38 @@
     padding-top: 15vh;
     .heading {
         margin-bottom: 2rem;
+    }
+
+    @include mediaMax($phone-l){
+        .heading{
+            font-size: 6rem;
+        }
+        .subHeading{
+            font-size: 3.5rem;
+        }
+        .plainText{
+            font-size: 1.5rem;
+        }
+    }
+
+    @include mediaMax($phone-m){
+        height: 80vh;
+        justify-content: flex-start;
+        padding-top: 10vh;
+        
+        .contactBar{
+            flex-direction: column;
+            justify-content: space-around;
+            height: 50%;
+            padding-top: 5vh;
+    
+            .plainText {
+                font-size: 1.5rem;
+            }
+
+            .contactIcon{
+                padding: 1rem 0;
+            }
+        }
     }
 }

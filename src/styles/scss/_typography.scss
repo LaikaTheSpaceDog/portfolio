@@ -68,7 +68,11 @@ $fontStackNoticia: 'Noticia', serif;
     font-size: 2rem;
     color: $orange;
     text-align: center;
-    padding: 1rem
+    padding: 1rem;
+
+    @include mediaMax($phone-m){
+        font-size: 1.5rem;
+    }
 }
 
 .cardLinkText {
