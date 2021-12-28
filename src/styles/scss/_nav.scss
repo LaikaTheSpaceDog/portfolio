@@ -20,6 +20,12 @@
     position: relative;
     top: 1rem;
 
+    @include mediaMax($main){
+        .navLink {
+          margin: 0 2rem;
+        } 
+    }
+
     .navLink {
         margin: 0 4rem;
     }
@@ -45,9 +51,9 @@
     border-top: .1em solid $orange;
     content: "";
     position: absolute;
-      top: 100%;
-      bottom: .14em;
-      left: 0;
+    top: 100%;
+    bottom: .14em;
+    left: 0;
     transition: right .4s cubic-bezier(0,.5,0,1),
                 border-color .4s ease-out;
   }
@@ -71,3 +77,46 @@
       right: 0;
     }
   }
+
+.navList.dropDown {
+  @include mediaMax($phone-l){
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    .dropBtn {
+        display: block;
+        padding: 16px;
+        font-family: $fontStackOstrich;
+        font-size: 3rem;
+        color: $ghost;
+        background-color: $orange;
+        border: none;
+        cursor: pointer;
+        background-color: $orange;
+    }
+
+    .dropContent {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        position: absolute;
+        top: 75px;
+        background-color: $orange;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+        
+    .dropContent .navLinkBox {
+        padding: 3%;
+        text-decoration: none;
+        display: block;
+        width: auto;
+        text-align: center;
+        background-color: $orange;
+        .navLink {
+            font-size: 2rem;
+        }
+    }
+  }
+}

@@ -2,6 +2,21 @@ $orange: #D77356;
 $navy: #274654;
 $ghost: #F8F8FF;
 
+// Breakpoints
+$phone-s: 320px;         // pure-u-p-
+$phone-m: 428px;
+$phone-l: 600px;       // pure-u-pl-
+$tablet-s: 768px;      // pure-u-ts-
+$tablet-m: 840px;      // pure-u-tm-
+$tablet: 980px;        // pure-u-t-
+$main: 1008px;        
+$tablet-l: 1024px;     // pure-u-tl-
+$tablet-xl: 1124px;    // pure-u-txl-
+$laptop-s: 1280px;     // pure-u-ls-
+$laptop: 1380px;
+$laptop-l: 1680px;
+$desktop: 2000px;
+
 body {
     width: 100vw;
     max-width: 100%;

@@ -19,10 +19,23 @@
 .contactIcon {
     width: 100px;
     filter: invert(84%) sepia(32%) saturate(420%) hue-rotate(196deg) brightness(107%) contrast(112%);
+
+    @include mediaMax($phone-l){
+        width: 75px;
+    }
 }
 
 .email {
     text-align: center;
+
+    img {
+        margin-bottom: 10px;
+    }
+
+    .plainText {
+        display: block;
+        text-decoration: none;
+    }
 }
 
 .proj3 {

@@ -16,7 +16,7 @@ const Contacts = () => (
                     <a href="https://github.com/LaikaTheSpaceDog" target="_blank" rel="noopener noreferrer"><img className="contactIcon" src={ github } alt="GitHub logo"/></a>
                     <div className="email">
                         <a href="mailto:oscarjwales@gmail.com" target="_blank" rel="noopener noreferrer"><img className="contactIcon" src={ email } alt="Email icon" /></a>
-                        <p className="plainText">oscarjwales@gmail.com</p>
+                        <a href="mailto:oscarjwales@gmail.com" target="_blank" rel="noopener noreferrer" className="plainText">oscarjwales@gmail.com</a>
                     </div>
                     <a href="https://www.linkedin.com/in/oscar-wales/" target="_blank" rel="noopener noreferrer"><img className="contactIcon" src={ linkedin } alt="LinkedIn logo"/></a>
                 </section>

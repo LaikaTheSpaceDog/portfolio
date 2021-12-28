@@ -11,4 +11,8 @@
 
 .snapWide {
     scroll-snap-align: start;
+
+    @include mediaMax($main){
+        scroll-snap-align: none;
+    }
 }

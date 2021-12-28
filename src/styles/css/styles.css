@@ -59,6 +59,9 @@ body {
   color: #D77356;
   text-align: center;
   padding: 1rem; }
+  @media (max-width: 427px) {
+    .footerText {
+      font-size: 1.5rem; } }
 
 .cardLinkText {
   font-family: "OstrichSans", Arial, sans-serif;
@@ -87,6 +90,9 @@ body {
   width: 100%;
   position: relative;
   top: 1rem; }
+  @media (max-width: 1007px) {
+    .navList .navLink {
+      margin: 0 2rem; } }
   .navList .navLink {
     margin: 0 4rem; }
   .navList .dropBtn {
@@ -124,6 +130,41 @@ body {
   90%, 100% {
     left: 100%;
     right: 0; } }
+
+@media (max-width: 599px) {
+  .navList.dropDown {
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center; }
+    .navList.dropDown .dropBtn {
+      display: block;
+      padding: 16px;
+      font-family: "OstrichSans", Arial, sans-serif;
+      font-size: 3rem;
+      color: #F8F8FF;
+      background-color: #D77356;
+      border: none;
+      cursor: pointer;
+      background-color: #D77356; }
+    .navList.dropDown .dropContent {
+      display: flex;
+      flex-direction: column;
+      width: 65%;
+      position: absolute;
+      top: 75px;
+      background-color: #D77356;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1; }
+    .navList.dropDown .dropContent .navLinkBox {
+      padding: 3%;
+      text-decoration: none;
+      display: block;
+      width: auto;
+      text-align: center;
+      background-color: #D77356; }
+      .navList.dropDown .dropContent .navLinkBox .navLink {
+        font-size: 2rem; } }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -202,6 +243,27 @@ table {
     padding: 0 20px; }
   .jumbo .scrollWhite {
     padding-top: 2rem; }
+  @media (max-width: 599px) {
+    .jumbo .heading {
+      font-size: 6rem; }
+    .jumbo .subHeading {
+      font-size: 3.5rem; }
+    .jumbo .plainText.description {
+      font-size: 1.75rem;
+      margin-top: 10%; } }
+  @media (max-width: 499px) {
+    .jumbo .heading {
+      font-size: 4rem; }
+    .jumbo .plainText.description {
+      font-size: 1.5rem;
+      padding: 0 2rem; } }
+  @media (max-width: 427px) {
+    .jumbo .plainText.description {
+      font-size: 1rem;
+      width: 80vw;
+      padding: 0 2rem; }
+    .jumbo .heading {
+      margin-top: 5vh; } }
 
 .card {
   border: 1px #274654 solid;
@@ -234,6 +296,45 @@ table {
       display: none; }
   .cardGroup .cardSnap.snap800 .scrollSnap {
     display: none; }
+  @media (max-width: 1007px) {
+    .cardGroup {
+      flex-direction: column;
+      align-items: center; }
+      .cardGroup .cardSnap.snap800 {
+        width: 100%;
+        min-height: 0;
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+        scroll-snap-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; }
+        .cardGroup .cardSnap.snap800 .cardsSnapHeading {
+          display: block; }
+          .cardGroup .cardSnap.snap800 .cardsSnapHeading .cardGroupSnapHeading {
+            display: block; }
+        .cardGroup .cardSnap.snap800 .card {
+          width: 70%;
+          justify-content: space-evenly; }
+          .cardGroup .cardSnap.snap800 .card .cardImg {
+            width: 60%;
+            height: auto; }
+          .cardGroup .cardSnap.snap800 .card .cardLinks {
+            position: relative;
+            bottom: auto; }
+          .cardGroup .cardSnap.snap800 .card .cardText {
+            font-size: 1rem; }
+        .cardGroup .cardSnap.snap800 .scrollSnap {
+          display: block; } }
+  @media (max-width: 599px) {
+    .cardGroup .cardSnap.snap800 .card .cardText {
+      font-size: 0.85rem; } }
+  @media (max-width: 427px) {
+    .cardGroup .cardSnap.snap800 .card {
+      margin: 1rem;
+      height: 50%;
+      min-height: 50vh; } }
 
 .projects {
   background-color: #F8F8FF;
@@ -244,6 +345,13 @@ table {
   justify-content: space-between;
   align-items: center;
   width: 100%; }
+  @media (max-width: 1007px) {
+    .projects {
+      height: 100%; }
+      .projects .scroll {
+        display: none; }
+      .projects .cardsHeading {
+        display: none; } }
 
 .cardLinks {
   display: flex;
@@ -276,9 +384,17 @@ table {
 .contactIcon {
   width: 100px;
   filter: invert(84%) sepia(32%) saturate(420%) hue-rotate(196deg) brightness(107%) contrast(112%); }
+  @media (max-width: 599px) {
+    .contactIcon {
+      width: 75px; } }
 
 .email {
   text-align: center; }
+  .email img {
+    margin-bottom: 10px; }
+  .email .plainText {
+    display: block;
+    text-decoration: none; }
 
 .proj3 {
   display: none; }
@@ -289,6 +405,19 @@ table {
   text-align: center;
   position: relative;
   width: 100%; }
+  @media (max-width: 1007px) {
+    .contact .scrollWhite.projs {
+      display: none; }
+    .contact .scrollWhite.proj3 {
+      display: inline;
+      -moz-animation: bounceUp 2.5s infinite linear;
+      -o-animation: bounceUp 2.5s infinite linear;
+      -webkit-animation: bounceUp 2.5s infinite linear;
+      animation: bounceUp 2.5s infinite linear;
+      -webkit-animation-delay: 0s;
+      animation-delay: 0s;
+      position: relative;
+      display: inline-block; } }
 
 .contactBar {
   display: flex;
@@ -302,6 +431,27 @@ table {
   padding-top: 15vh; }
   .contactNav .heading {
     margin-bottom: 2rem; }
+  @media (max-width: 599px) {
+    .contactNav .heading {
+      font-size: 6rem; }
+    .contactNav .subHeading {
+      font-size: 3.5rem; }
+    .contactNav .plainText {
+      font-size: 1.5rem; } }
+  @media (max-width: 427px) {
+    .contactNav {
+      height: 80vh;
+      justify-content: flex-start;
+      padding-top: 10vh; }
+      .contactNav .contactBar {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 50%;
+        padding-top: 5vh; }
+        .contactNav .contactBar .plainText {
+          font-size: 1.5rem; }
+        .contactNav .contactBar .contactIcon {
+          padding: 1rem 0; } }
 
 .footer {
   background-color: #F8F8FF;
@@ -320,146 +470,9 @@ table {
 
 .snapWide {
   scroll-snap-align: start; }
-
-@media only screen and (max-width: 1050px) {
-  .navList .navLink {
-    margin: 0 2rem; }
-  .snapWide {
-    scroll-snap-align: none; }
-  .projects {
-    height: 100%; }
-    .projects .scroll {
-      display: none; }
-    .projects .cardsHeading {
-      display: none; }
-  .cardGroup {
-    flex-direction: column;
-    align-items: center; }
-    .cardGroup .cardSnap.snap800 {
-      width: 100%;
-      min-height: 0;
-      height: 100vh;
-      height: calc(var(--vh, 1vh) * 100);
-      scroll-snap-align: start;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center; }
-      .cardGroup .cardSnap.snap800 .cardsSnapHeading {
-        display: block; }
-        .cardGroup .cardSnap.snap800 .cardsSnapHeading .cardGroupSnapHeading {
-          display: block; }
-      .cardGroup .cardSnap.snap800 .card {
-        width: 70%;
-        justify-content: space-evenly; }
-        .cardGroup .cardSnap.snap800 .card .cardImg {
-          width: 60%;
-          height: auto; }
-        .cardGroup .cardSnap.snap800 .card .cardLinks {
-          position: relative;
-          bottom: auto; }
-        .cardGroup .cardSnap.snap800 .card .cardText {
-          font-size: 1rem; }
-      .cardGroup .cardSnap.snap800 .scrollSnap {
-        display: block; }
-  .contact .scrollWhite.projs {
-    display: none; }
-  .contact .scrollWhite.proj3 {
-    display: inline;
-    -moz-animation: bounceUp 2.5s infinite linear;
-    -o-animation: bounceUp 2.5s infinite linear;
-    -webkit-animation: bounceUp 2.5s infinite linear;
-    animation: bounceUp 2.5s infinite linear;
-    -webkit-animation-delay: 0s;
-    animation-delay: 0s;
-    position: relative;
-    display: inline-block; } }
-
-@media only screen and (max-width: 600px) {
-  .jumbo .heading {
-    font-size: 6rem; }
-  .jumbo .subHeading {
-    font-size: 3.5rem; }
-  .jumbo .plainText.description {
-    font-size: 1.75rem;
-    margin-top: 10%; }
-  .cardGroup .cardSnap.snap800 .card .cardText {
-    font-size: 0.85rem; }
-  .navList.dropdown {
-    margin-top: 2rem;
-    flex-direction: column;
-    align-items: center; }
-    .navList.dropdown .dropBtn {
-      display: block;
-      padding: 16px;
-      font-family: "OstrichSans", Arial, sans-serif;
-      font-size: 3rem;
-      color: #F8F8FF;
-      background-color: #D77356;
-      border: none;
-      cursor: pointer;
-      background-color: #D77356; }
-    .navList.dropdown .dropContent {
-      display: flex;
-      flex-direction: column;
-      width: 65%;
-      position: absolute;
-      top: 75px;
-      background-color: #D77356;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-      z-index: 1; }
-    .navList.dropdown .dropContent .navLinkBox {
-      padding: 3%;
-      text-decoration: none;
-      display: block;
-      width: auto;
-      text-align: center;
-      background-color: #D77356; }
-      .navList.dropdown .dropContent .navLinkBox .navLink {
-        font-size: 2rem; }
-  .contactNav .heading {
-    font-size: 6rem; }
-  .contactNav .subHeading {
-    font-size: 3.5rem; }
-  .contactIcon {
-    width: 75px; }
-  .contactNav .plainText {
-    font-size: 1.5rem; } }
-
-@media only screen and (max-width: 500px) {
-  .jumbo .heading {
-    font-size: 4rem; }
-  .jumbo .plainText.description {
-    font-size: 1.5rem;
-    padding: 0 2rem; } }
-
-@media only screen and (max-width: 400px) {
-  .cardGroup .cardSnap.snap800 .card {
-    margin: 1rem;
-    height: 50%;
-    min-height: 50vh; }
-  .jumbo .plainText.description {
-    font-size: 1rem;
-    width: 80vw;
-    padding: 0 2rem; }
-  .jumbo .heading {
-    margin-top: 5vh; }
-  .contactNav {
-    height: 80vh;
-    justify-content: flex-start;
-    padding-top: 10vh; }
-    .contactNav .contactBar {
-      flex-direction: column;
-      justify-content: space-around;
-      height: 50%;
-      padding-top: 5vh; }
-      .contactNav .contactBar .plainText {
-        font-size: 1.5rem; }
-      .contactNav .contactBar .contactIcon {
-        padding: 1rem 0; }
-  .footerText {
-    font-size: 1.5rem; } }
+  @media (max-width: 1007px) {
+    .snapWide {
+      scroll-snap-align: none; } }
 
 @media only screen and (max-width: 350px), screen and (orientation: landscape) and (min-device-width: 319px) and (max-device-width: 480px) {
   .jumbo .heading {

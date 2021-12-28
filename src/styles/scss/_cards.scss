@@ -42,6 +42,76 @@
             display: none;
         }
     }
+
+    @include mediaMax($main){
+        flex-direction: column;
+        align-items: center;
+
+        .cardSnap.snap800 {
+            width: 100%;
+            min-height: 0;
+            height: 100vh;
+            height: calc(var(--vh, 1vh) * 100);
+            scroll-snap-align: start;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .cardsSnapHeading {
+                display: block;
+
+                .cardGroupSnapHeading {
+                    display: block;
+                }
+            }
+
+            .card {
+                width: 70%;
+                justify-content: space-evenly;
+
+                .cardImg {
+                    width: 60%;
+                    height: auto;
+                }
+
+                .cardLinks {
+                    position: relative;
+                    bottom: auto;
+                }
+
+                .cardText {
+                    font-size: 1rem;
+                }
+
+            }
+
+            .scrollSnap {
+                display: block;
+            }
+            
+        }
+    }
+
+    @include mediaMax($phone-l){
+        .cardSnap.snap800 {
+            .card {
+                .cardText {
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+
+    @include mediaMax($phone-m){
+        .cardSnap.snap800 {
+            .card {
+                margin: 1rem;
+                height: 50%;
+                min-height: 50vh;
+            }
+        }
+    }
 }
 
 .projects {
@@ -53,6 +123,18 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+
+    @include mediaMax($main){
+        height: 100%;
+
+        .scroll {
+            display: none;
+        }
+
+        .cardsHeading {
+            display: none;
+        }
+    }
 }
 
 .cardLinks {
