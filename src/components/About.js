@@ -4,29 +4,9 @@ import bottomArrow from "../styles/assets/icons/double-arrow-bottom.svg"
 
 const About = () => {
 
-    const [showDrop, setShowDrop] = useState(false);
-    let current = showDrop;
-    const drop = () => setShowDrop(!current);
-
     return (
         <>
             <article className="jumbo snap section__constrained" id="about">
-                <div className="dropdown navList">
-                    <button className="dropBtn" onClick={drop}>Menu</button>
-                    { showDrop ?
-                        <ul className="dropContent">
-                            <div className="navLinkBox">
-                                <li><a className="navLink" href="#about">About</a></li>
-                            </div>
-                            <div className="navLinkBox">
-                                <li><a className="navLink" href="#projects">Projects</a></li>
-                            </div>
-                            <div className="navLinkBox">
-                                <li><a className="navLink" href="#contact">Contact</a></li>
-                            </div>
-                        </ul> : null
-                    }
-                </div>
                 <section className="jumboName">
                     <h1 className="heading">Oscar Wales</h1>
                     <h2 className="subHeading">Full Stack Developer</h2>
