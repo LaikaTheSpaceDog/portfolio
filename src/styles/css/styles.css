@@ -128,34 +128,33 @@ table {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center; }
-  .jumbo .plainText.description {
-    padding-bottom: 2rem;
-    margin-top: 10vh; }
   .jumbo .jumboName {
     width: 100%;
     padding: 0 20px; }
-  .jumbo .heading {
-    margin-top: 20vh; }
-  .jumbo .subHeading {
-    text-align: center; }
+    .jumbo .jumboName .heading {
+      margin-bottom: 1rem; }
+    .jumbo .jumboName .subHeading {
+      margin-bottom: 2rem; }
   .jumbo .bottomJumbo {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     padding: 0 20px; }
-  .jumbo .scrollWhite {
-    padding-top: 2rem; }
+  .jumbo .scrollContainer {
+    position: absolute;
+    bottom: 0; }
+    .jumbo .scrollContainer .scrollWhite {
+      padding-top: 2rem; }
   @media (max-width: 599px) {
     .jumbo .heading {
       font-size: 6rem; }
     .jumbo .subHeading {
       font-size: 3.5rem; }
     .jumbo .plainText.description {
-      font-size: 1.75rem;
-      margin-top: 10%; } }
+      font-size: 1.75rem; } }
   @media (max-width: 499px) {
     .jumbo .heading {
       font-size: 4rem; }
