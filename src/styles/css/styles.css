@@ -358,7 +358,11 @@ table {
         .contactNav .contactBar .plainText {
           font-size: 1.5rem; }
         .contactNav .contactBar .contactIcon {
-          padding: 1rem 0; } }
+          padding: 1rem 0; }
+        .contactNav .contactBar .email {
+          padding-bottom: 1rem; }
+          .contactNav .contactBar .email .contactIcon {
+            padding-bottom: 0; } }
 
 .footer {
   background-color: #F8F8FF;

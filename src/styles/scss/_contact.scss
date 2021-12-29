@@ -66,6 +66,14 @@
             .contactIcon{
                 padding: 1rem 0;
             }
+
+            .email {
+                padding-bottom: 1rem;
+                
+                .contactIcon {
+                    padding-bottom: 0;
+                }
+            }
         }
     }
 }
