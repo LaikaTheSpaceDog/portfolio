@@ -89,7 +89,6 @@
                 align-items: center;
 
                 @include mediaMax($main){
-                    width: 70%;
                     justify-content: space-evenly;
                     height: auto;
                 }

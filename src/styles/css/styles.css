@@ -132,7 +132,6 @@ table {
   justify-content: space-between;
   align-items: center; }
   .jumbo .plainText.description {
-    padding: 0 5rem;
     padding-bottom: 2rem;
     margin-top: 10vh; }
   .jumbo .jumboName {
@@ -162,13 +161,11 @@ table {
     .jumbo .heading {
       font-size: 4rem; }
     .jumbo .plainText.description {
-      font-size: 1.5rem;
-      padding: 0 2rem; } }
+      font-size: 1.5rem; } }
   @media (max-width: 427px) {
     .jumbo .plainText.description {
       font-size: 1rem;
-      width: 80vw;
-      padding: 0 2rem; }
+      width: 80vw; }
     .jumbo .heading {
       margin-top: 5vh; } }
 
@@ -243,7 +240,6 @@ table {
         align-items: center; }
         @media (max-width: 1007px) {
           .projects .cardGroup .cardSnap.snap800 .card {
-            width: 70%;
             justify-content: space-evenly;
             height: auto; } }
         .projects .cardGroup .cardSnap.snap800 .card .cardImgContainer {
@@ -347,17 +343,16 @@ table {
   .contactNav .heading {
     margin-bottom: 2rem; }
   @media (max-width: 599px) {
-    .contactNav .heading {
-      font-size: 6rem; }
-    .contactNav .subHeading {
-      font-size: 3.5rem; }
-    .contactNav .plainText {
-      font-size: 1.5rem; } }
-  @media (max-width: 427px) {
     .contactNav {
       height: 80vh;
       justify-content: flex-start;
       padding-top: 10vh; }
+      .contactNav .heading {
+        font-size: 6rem; }
+      .contactNav .subHeading {
+        font-size: 3.5rem; }
+      .contactNav .plainText {
+        font-size: 1.5rem; }
       .contactNav .contactBar {
         flex-direction: column;
         justify-content: space-around;

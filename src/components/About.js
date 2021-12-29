@@ -1,5 +1,4 @@
 import React from 'react';
-import {useState} from 'react';
 import bottomArrow from "../styles/assets/icons/double-arrow-bottom.svg"
 
 const About = () => {

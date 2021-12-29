@@ -39,6 +39,10 @@
     }
 
     @include mediaMax($phone-l){
+        height: 80vh;
+        justify-content: flex-start;
+        padding-top: 10vh;
+        
         .heading{
             font-size: 6rem;
         }
@@ -48,13 +52,7 @@
         .plainText{
             font-size: 1.5rem;
         }
-    }
-
-    @include mediaMax($phone-m){
-        height: 80vh;
-        justify-content: flex-start;
-        padding-top: 10vh;
-        
+                
         .contactBar{
             flex-direction: column;
             justify-content: space-around;
