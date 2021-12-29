@@ -99,6 +99,7 @@
                     padding-top: 56.25%;
                     border: 1px $navy solid;
                     position: relative;
+                    margin-bottom: 1rem;
                 
                     .cardImg {
                         width: 100%;
@@ -113,6 +114,7 @@
                 }
 
                 .cardText {
+                    margin-bottom: 1.5rem;
                     @include mediaMax($main){
                         font-size: 1rem;
                     }
@@ -122,7 +124,6 @@
                     }
 
                     @include mediaMax($phone-l){
-                        margin: 1rem;
                         height: 50%;
                     }
                 }
@@ -131,8 +132,7 @@
                     display: flex;
                     justify-content: space-evenly;
                     list-style: none;
-                    padding-top: 1.5rem;
-                    padding-bottom: 0.5rem;
+                    margin-bottom: 0.5rem;
                     margin-bottom: 0.1rem;
                     margin-top: auto;
                 
