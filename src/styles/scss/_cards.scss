@@ -91,6 +91,7 @@
                 @include mediaMax($main){
                     width: 70%;
                     justify-content: space-evenly;
+                    height: auto;
                 }
 
                 .cardImgContainer {
@@ -124,7 +125,6 @@
                     @include mediaMax($phone-l){
                         margin: 1rem;
                         height: 50%;
-                        min-height: 50vh;
                     }
                 }
 

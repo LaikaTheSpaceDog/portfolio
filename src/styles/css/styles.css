@@ -340,7 +340,8 @@ table {
         @media (max-width: 1007px) {
           .projects .cardGroup .cardSnap.snap800 .card {
             width: 70%;
-            justify-content: space-evenly; } }
+            justify-content: space-evenly;
+            height: auto; } }
         .projects .cardGroup .cardSnap.snap800 .card .cardImgContainer {
           width: 100%;
           height: 0;
@@ -365,8 +366,7 @@ table {
         @media (max-width: 599px) {
           .projects .cardGroup .cardSnap.snap800 .card .cardText {
             margin: 1rem;
-            height: 50%;
-            min-height: 50vh; } }
+            height: 50%; } }
         .projects .cardGroup .cardSnap.snap800 .card .cardLinks {
           display: flex;
           justify-content: space-evenly;
