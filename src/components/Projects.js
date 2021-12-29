@@ -15,9 +15,6 @@ const Projects = () => (
             <section className="cardGroup section__constrained">
                 <section className="cardSnap snap800" id="proj1">
                     <a href="#about"><img className="scrollSnap up bounceUp" src={ scrollUp } alt="Scroll up arrow" /></a>
-                    <header className="cardsSnapHeading">
-                        <h2 className="cardGroupSnapHeading">Project 1</h2>
-                    </header>
                     <article className="card">
                         <div className="cardImgContainer">
                             <img className="cardImg" src={ pingPong } alt="Landing page of pong-themed ping-pong tournament app" />
@@ -33,9 +30,6 @@ const Projects = () => (
                 </section>
                 <section className="cardSnap snap800" id="proj2">
                     <a href="#proj1"><img className="scrollSnap up bounceUp" src={ scrollUp } alt="Scroll up arrow" /></a>
-                    <header className="cardsSnapHeading">
-                        <h2 className="cardGroupSnapHeading">Project 2</h2>
-                    </header>
                     <article className="card">
                         <div className="cardImgContainer">
                             <img className="cardImg" src={ food } alt="Landing page of Food Atlas" />
@@ -51,9 +45,6 @@ const Projects = () => (
                 </section>
                 <section className="cardSnap snap800" id="proj3">
                     <a href="#proj2"><img className="scrollSnap up bounceUp" src={ scrollUp } alt="Scroll up arrow" /></a>
-                    <header className="cardsSnapHeading">
-                        <h2 className="cardGroupSnapHeading">Project 3</h2>
-                    </header>
                     <article className="card">
                         <div className="cardImgContainer">
                             <img className="cardImg" src={ zoe } alt="Home page of pet database" />
