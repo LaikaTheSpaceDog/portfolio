@@ -1,0 +1,11 @@
+
+.section__constrained {
+    max-width: $max-width;
+    @include responsive-padding-left-right(15px, 84px);
+    margin: 0 auto;
+    
+    @include mediaMax($tablet-s) {
+      padding-left: $global-gutter !important;
+      padding-right: $global-gutter !important;
+    }
+}

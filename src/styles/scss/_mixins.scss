@@ -21,3 +21,76 @@
       @content;
     }
   }
+
+/* Responsive Padding */
+// ==============================
+// Padding mixin
+// ==============================
+$padding-lock-min: $min-width !default;
+$padding-lock-max: $max-width !default;
+//  padding-size
+@mixin responsive-padding-top-bottom (
+  $min,                         // padding-size
+  $max: null,                   // optional maximum padding size
+  $lock-min: $padding-lock-min,  // optional minimum viewport width
+  $lock-max: $padding-lock-max   // optional maximum viewport width
+){
+  & { padding-top: $min;
+    padding-bottom: $min;}
+  @if $max {
+    @media (min-width: $lock-min) and (max-width: $lock-max){
+      & {
+        padding-top: calc(
+                #{$min} +
+                #{num($max) - num($min)} *
+                (100vw - #{$lock-min}) /
+                #{num($lock-max) - num($lock-min)}
+        );
+        padding-bottom: calc(
+                #{$min} +
+                #{num($max) - num($min)} *
+                (100vw - #{$lock-min}) /
+                #{num($lock-max) - num($lock-min)}
+        );
+      }
+    }
+    @media (min-width: $lock-max){
+      & { padding-top: $max;
+        padding-bottom: $max;
+      }
+    }
+  }
+}
+//  padding-size
+@mixin responsive-padding-left-right (
+  $min,                         // padding-size
+  $max: null,                   // optional maximum padding size
+  $lock-min: $padding-lock-min,  // optional minimum viewport width
+  $lock-max: $padding-lock-max   // optional maximum viewport width
+){
+  & { padding-left: $min;
+    padding-right: $min;}
+  @if $max {
+    @media (min-width: $lock-min) and (max-width: $lock-max){
+      & {
+        padding-left: calc(
+                #{$min} +
+                #{num($max) - num($min)} *
+                (100vw - #{$lock-min}) /
+                #{num($lock-max) - num($lock-min)}
+        );
+        padding-right: calc(
+                #{$min} +
+                #{num($max) - num($min)} *
+                (100vw - #{$lock-min}) /
+                #{num($lock-max) - num($lock-min)}
+        );
+      }
+    }
+    @media (min-width: $lock-max){
+      & { padding-left: $max;
+        padding-right: $max;
+      }
+    }
+  }
+}

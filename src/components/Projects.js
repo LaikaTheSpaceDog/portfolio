@@ -8,11 +8,11 @@ import zoe from "../styles/assets/images/zoe.png";
 const Projects = () => (
     <>
         <main className="projects snapWide" id="projects">
-        <a href="#about"><img className="scroll up bounceUp" src={ scrollUp } alt="Scroll up arrow" /></a>
+            <a href="#about"><img className="scroll up bounceUp" src={ scrollUp } alt="Scroll up arrow" /></a>
             <header className="cardsHeading">
                 <h2 className="cardGroupHeading">Projects</h2>
             </header>
-            <section className="cardGroup">
+            <section className="cardGroup section__constrained">
                 <section className="cardSnap snap800" id="proj1">
                     <a href="#about"><img className="scrollSnap up bounceUp" src={ scrollUp } alt="Scroll up arrow" /></a>
                     <header className="cardsSnapHeading">

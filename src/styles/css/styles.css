@@ -1,7 +1,9 @@
 body {
   width: 100vw;
-  max-width: 100%; }
+  max-width: 100%;
+  background-color: #D77356; }
 
+/* Responsive Padding */
 @font-face {
   font-family: "OstrichSans";
   src: url("../assets/fonts/Ostrich-Sans-Regular/ostrich-sans-regular.ttf") format("truetype"), url("../assets/fonts/Ostrich-Sans-Regular/ostrich-sans-regular.woff") format("woff");
@@ -268,12 +270,10 @@ table {
 
 .card {
   border: 1px #274654 solid;
-  min-width: 200px;
-  width: 25vw;
+  width: 100%;
+  height: 100%;
   padding: 1rem;
   text-align: center;
-  min-height: 60vh;
-  height: 60%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -299,15 +299,17 @@ table {
 .cardGroup {
   display: flex;
   justify-content: space-evenly;
-  align-items: center; }
-  .cardGroup .card {
-    margin: 2rem; }
-  .cardGroup .cardSnap.snap800 .cardsSnapHeading {
-    display: none; }
-    .cardGroup .cardSnap.snap800 .cardsSnapHeading .cardGroupSnapHeading {
+  align-items: stretch;
+  gap: 20px;
+  grid-gap: 20px; }
+  .cardGroup .cardSnap.snap800 {
+    width: calc(33.33% - 13.33px); }
+    .cardGroup .cardSnap.snap800 .cardsSnapHeading {
       display: none; }
-  .cardGroup .cardSnap.snap800 .scrollSnap {
-    display: none; }
+      .cardGroup .cardSnap.snap800 .cardsSnapHeading .cardGroupSnapHeading {
+        display: none; }
+    .cardGroup .cardSnap.snap800 .scrollSnap {
+      display: none; }
   @media (max-width: 1007px) {
     .cardGroup {
       flex-direction: column;
@@ -332,9 +334,6 @@ table {
           .cardGroup .cardSnap.snap800 .card .cardImg {
             width: 60%;
             height: auto; }
-          .cardGroup .cardSnap.snap800 .card .cardLinks {
-            position: relative;
-            bottom: auto; }
           .cardGroup .cardSnap.snap800 .card .cardText {
             font-size: 1rem; }
         .cardGroup .cardSnap.snap800 .scrollSnap {
@@ -371,8 +370,8 @@ table {
   list-style: none;
   padding-top: 1.5rem;
   padding-bottom: 0.5rem;
-  position: absolute;
-  bottom: 0.1rem; }
+  margin-bottom: 0.1rem;
+  margin-top: auto; }
   .cardLinks .cardLinkText {
     padding: 0 2rem; }
 
@@ -696,3 +695,22 @@ table {
     bottom: -0.2em; }
   40% {
     bottom: 0; } }
+
+.section__constrained {
+  max-width: 1600px;
+  margin: 0 auto; }
+  .section__constrained {
+    padding-left: 15px;
+    padding-right: 15px; }
+  @media (min-width: 360px) and (max-width: 1600px) {
+    .section__constrained {
+      padding-left: calc( 15px + num(84px)-num(15px) * (100vw - 360px) / num(1600px)-num(360px));
+      padding-right: calc( 15px + num(84px)-num(15px) * (100vw - 360px) / num(1600px)-num(360px)); } }
+  @media (min-width: 1600px) {
+    .section__constrained {
+      padding-left: 84px;
+      padding-right: 84px; } }
+  @media (max-width: 767px) {
+    .section__constrained {
+      padding-left: 20px !important;
+      padding-right: 20px !important; } }

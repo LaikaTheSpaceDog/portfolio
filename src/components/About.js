@@ -10,7 +10,7 @@ const About = () => {
 
     return (
         <>
-            <article className="jumbo snap" id="about">
+            <article className="jumbo snap section__constrained" id="about">
                 <div className="dropdown navList">
                     <button className="dropBtn" onClick={drop}>Menu</button>
                     { showDrop ?
