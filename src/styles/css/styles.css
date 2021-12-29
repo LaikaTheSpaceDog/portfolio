@@ -137,7 +137,7 @@ table {
     width: 100%;
     padding: 0 20px; }
   .jumbo .heading {
-    margin-top: 10vh; }
+    margin-top: 20vh; }
   .jumbo .subHeading {
     text-align: center; }
   .jumbo .bottomJumbo {
@@ -164,9 +164,7 @@ table {
   @media (max-width: 427px) {
     .jumbo .plainText.description {
       font-size: 1rem;
-      width: 80vw; }
-    .jumbo .heading {
-      margin-top: 5vh; } }
+      width: 80vw; } }
 
 .projects {
   background-color: #F8F8FF;
