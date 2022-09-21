@@ -53,6 +53,7 @@ const Projects = () => (
                         <p className="cardText">A Wordpress site built with a minimalist custom theme for an independent theatre company based in London. Live site coming soon!</p>
                         <ul className="cardLinks">
                             <li className="cardLinkText"><a href="https://github.com/LaikaTheSpaceDog/weldon-productions" target="_blank" rel="noopener noreferrer">Repo</a></li>
+                            <li className="cardLinkText"><a href="https://weldonproductions.co.uk/" target="_blank" rel="noopener noreferrer">Live</a></li>
                         </ul>
                     </article>
                     <a href="#contact"><img className="scrollSnap down bounceDown" src={ scrollDown } alt="Scroll down arrow" /></a>
